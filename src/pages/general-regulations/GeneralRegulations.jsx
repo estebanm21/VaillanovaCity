@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import './GeneralRegulations.css';
+import './generalRegulations.css';
 import { useEffect } from 'react';
 
 
