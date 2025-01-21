@@ -1,0 +1,415 @@
+/* Estilos generales para el navbar */
+.navbar-custom {
+  background-color: #101214; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  position: relative;
+}
+
+.navbar-custom::after {
+  content: ""; /* Crear el pseudo-elemento */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Altura del borde inferior */
+  background: linear-gradient(to right, #8f51ea, #fe53bb); /* Gradiente lila */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #fff; /* Color blanco para enlaces */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ddd; /* Cambia el color al pasar el mouse */
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: #fff; /* Color del borde del toggler */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn_discord {
+  background: #5865f2;
+}
+
+.btn_jugar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Ajusta según tus necesidades */
+  height: 40px;
+  text-decoration: none; /* Opcional, elimina el subrayado */
+  background: #1f2137;
+  border-radius: 20px; /* Opcional, diseño redondeado */
+  overflow: visible;
+  border: 1px solid #bb33ff;
+}
+
+.btn_1 {
+  display: flex;
+  overflow: visible;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  width: 9rem;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 8px;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(137.48deg, #8f51ea 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 10px;
+}
+
+#container-stars {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5px;
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+  position: relative;
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #7289da; /* El color morado */
+  z-index: 0; /* Asegúrate de que este valor sea suficiente para que el fondo se vea */
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(206, 206, 206, 0.466);
+  background-color: rgba(214, 214, 214, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+strong {
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn_1:hover {
+  transform: scale(1.1);
+}
+
+.btn_1:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn_1:active .circle {
+  background: #fe53bb;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-135rem, 50rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* From Uiverse.io by LightAndy1 */
+/* This is an example, feel free to delete this code */
+.tooltip-container {
+  position: relative;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  /*padding: 0.7em 1.8em;*/
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.tooltip-container .borde-back {
+  width: 60px;
+  height: 60px;
+  background-color: #232428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.tooltip-container .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #5865f2;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: -2;
+  left: -45px; /* Altere a posição inicial para a esquerda, fora da tela */
+  transform: translateX(
+    -32%
+  ); /* Usando translateX para controlar a transição da esquerda para a direita */
+  width: 160px;
+  height: 52px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s;
+  border-radius: 50px;
+  background-color: #5865f2;
+  background-image: linear-gradient(
+    -90deg,
+    #ff73fa 0%,
+    #5865f2 75%,
+    #5865f2 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  right: -0.2em; /* Mude para a direita */
+  top: 50%; /* Altere o topo para o meio da tooltip */
+  transform: translateY(-50%) rotate(45deg); /* Use translateY para centralizar verticalmente */
+  background: var(--background);
+}
+
+.tooltip-container:hover .tooltip {
+  left: 100%; /* Altere para a posição desejada (a direita) */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: -10;
+}
+.tooltip-container:hover {
+  transform: translateX(-50px);
+  transition: 0.5s linear;
+}
+
+.dropdown-menu {
+  /* background: red; */
+  width: auto;
+}
+/* Estilo general de los enlaces en la navbar */
+
+/* Estilo cuando se hace clic o se recibe el foco */
+.nav-item.dropdown a:active,
+.nav-item.dropdown a:focus {
+  color: #e5e3e6; /* Cambiar color cuando está activo o enfocado */
+  border-bottom: 3px solid #8027ad;
+}
+.isActive {
+  border-bottom: 3px solid #8027ad;
+}
+
+.dropdown-item {
+  color: #a1a4a8;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3px;
+  font-size: 18px;
+}
+
+/* Establece el color predeterminado para los enlaces */
+.nav-link {
+  color: #000; /* Color de texto predeterminado */
+  text-decoration: none;
+  padding-bottom: 5px; /* Para darle espacio al borde */
+}
+
+/* Cambiar el color y agregar un borde cuando la ruta esté activa */
+.nav-link.isActive {
+  color: #fff; /* Mantiene el mismo color de texto cuando está activo */
+  border-bottom: 3px solid #8027ad;
+  margin-right: 5px;
+}
+
+/* Cambiar color cuando el mouse pasa por encima */
+.nav-link:hover {
+  color: #333; /* Cambia el color al pasar el mouse */
+}

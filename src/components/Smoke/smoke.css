@@ -1,0 +1,13 @@
+/* layout/base.css */
+body {
+  margin: 0;
+  overflow: hidden; /* Para evitar scrolls si el canvas es más grande que la ventana */
+}
+
+/* modules/canvas.css */
+canvas {
+  display: block; /* Para que el canvas no tenga márgenes innecesarios */
+  width: 200px; /* El canvas ocupará todo el ancho de la ventana */
+  height: 100%; /* El canvas ocupará toda la altura de la ventana */
+  background-color: transparent; /* Asegura que el fondo sea transparente si es necesario */
+}

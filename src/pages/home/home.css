@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container_principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  background: #101214;
+  color: #fff;
+  justify-content: center;
+  position: relative;
+  /* background: red; */
+  overflow: hidden;
+  height: auto;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  z-index: 4000;
+}
+
+.bubbles span {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: #6eccee;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #6eccee, 0 0 100px #6eccee;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.container_info_home {
+  max-width: 1200px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  /* background: red; */
+  padding: 40px 0px;
+
+  gap: 12px;
+  /* position: relative; */
+  /* background: red; */
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.container_text {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+  width: 100%;
+  /* background: red; */
+  padding: 10px;
+}
+
+.text_home {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  color: #7f8793;
+  font-size: 18px;
+}
+
+.title {
+  font-weight: 900;
+  font-family: "Roboto", serif;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.container_image {
+  width: 480px;
+  position: relative;
+  display: inline-block;
+}
+
+.character {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  /* Asegurando que la imagen tenga un contorno blanco difuso */
+  filter: drop-shadow(
+    0 0 20px rgba(255, 255, 255, 0.7)
+  ); /* Ajusta la intensidad y tamaño de la sombra */
+  border-radius: 8px; /* Si quieres bordes redondeados, esto es opcional */
+}
+
+.btn_discord_home {
+  background: #5865f2;
+}
+
+.btn_jugar_home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Ajusta según tus necesidades */
+  height: 40px;
+  text-decoration: none; /* Opcional, elimina el subrayado */
+  background: #1f2137;
+  border-radius: 8px; /* Opcional, diseño redondeado */
+  overflow: visible;
+  border: 1px solid #bb33ff;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+:root {
+  --labs-sys-color-background: #111;
+  --labs-sys-color-on-background: white;
+  --base-speed: 4s;
+
+  --labs-sys-color-grid: #fac4ff;
+  --labs-sys-color-grid-glow: #df7373;
+  --labs-sys-color-sun-1: #fdb428;
+  --labs-sys-color-sun-2: #f672ca;
+  --labs-sys-color-sun-glow: #b9f;
+
+  --labs-sys-color-star: #f6c0c0;
+
+  --color-palm-trunk: #333;
+  --color-palm-leaf: #333;
+  --color-palm-leaf-2: #b9f;
+  --labs-sys-color-triangle: #6eccee;
+
+  --labs-sys-color-volume: var(--labs-sys-color-triangle);
+}
+
+.kode-text {
+  animation: kode-text 4s linear infinite;
+  perspective: 40px;
+
+  color: transparent; /* Hacemos el texto transparente para aplicar el degradado */
+  font-size: 3em; /* Tamaño del texto */
+  font-weight: bold; /* Estilo de fuente */
+  text-align: left;
+  background-image: linear-gradient(
+    45deg,
+    #fdb428,
+    #f672ca,
+    #b9f
+  ); /* Degradado de colores */
+  -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+  background-clip: text; /* Aplica el fondo solo al texto */
+  font-family: "Rock Salt", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  /* background: red; */
+  width: 400px;
+  height: auto;
+}
+
+.kode-text:after {
+  content: "";
+  position: absolute;
+  top: 8vmin;
+  left: 1vmin;
+  width: 48vmin;
+  /* height: 14vmin; */
+  background: repeating-radial-gradient(black, transparent 10vmin);
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+  transform: rotate(347deg);
+}
+
+@keyframes kode-text {
+  from {
+    --angle: 45deg;
+    transform: translateY(-0vh);
+  }
+
+  49.5% {
+    --angle: 360deg;
+    transform: translateY(-1vh);
+    filter: brightness(100%);
+  }
+
+  50% {
+    --angle: 360deg;
+    transform: translateY(-1vh) scaleY(0.1) skewX(253deg);
+    filter: brightness(190%);
+  }
+
+  51% {
+    --angle: 360deg;
+    transform: translateY(-1vh) scaleY(0.5) skewY(37deg);
+    filter: brightness(190%);
+  }
+
+  52% {
+    --angle: 360deg;
+    filter: brightness(190%);
+    transform: translateY(-0vh);
+  }
+
+  to {
+    --angle: 45deg;
+    transform: translateY(-0vh);
+  }
+}
+
+body {
+  background-color: var(--labs-sys-color-background);
+  color: var(--labs-sys-color-on-background);
+
+  /* overflow: hidden; */
+  color: var(--labs-sys-color-triangle);
+}
+
+.difuminar {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(180, 22, 22, 0) 0%, #101214 50%);
+  bottom: -50px;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+.container_list_features {
+  height: auto;
+  width: 100%;
+  background: #fafafa;
+  /* padding: 0px 50px; */
+  position: relative;
+}
+
+.container_info_list {
+  max-width: 1200px;
+  /* height: auto; */
+  /* min-height: 100vh; */
+  /* border: 1px solid #000; */
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 70px;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card_feature {
+  width: 500px;
+  /* height: 200px; */
+  /* border: 1px solid red; */
+  padding: 5px;
+  color: #6c757d;
+}
+
+.card_feature p {
+  font-size: 18px;
+}
+
+.container_title_card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.icon_title_card {
+  width: 80px;
+}
+
+.icon_title_card img {
+  width: 100%;
+}
+
+.container_socialmedia {
+  width: 100%;
+
+  background: #101214;
+}
+
+.container_cards_socialmedia {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+/* Contenedor de la tarjeta */
+/* Contenedor de la tarjeta */
+.border_card_social_media {
+  width: 380px;
+  height: 190px;
+  border-radius: 20px;
+  position: relative;
+  border: 5px solid rgba(255, 0, 0, 0.5); /* Rojo con 50% de opacidad */
+}
+
+.border_card_social_media_discord {
+  width: 380px;
+  height: 190px;
+  border-radius: 20px;
+  position: relative;
+  border: 5px solid rgba(114, 137, 218, 0.5);
+}
+
+.border_card_social_media_instagram {
+  width: 380px;
+  height: 190px;
+  border-radius: 20px;
+  position: relative;
+  border: 5px solid rgba(255, 28, 116, 0.5);
+}
+
+.border_card_social_media_tiktok {
+  width: 380px;
+  height: 190px;
+  border-radius: 20px;
+  position: relative;
+  border: 5px solid rgba(8, 255, 249, 0.5);
+}
+
+/* Cuerpo de la tarjeta (donde estará el contenido) */
+.card_body {
+  position: relative; /* Necesario para poder aplicar el fondo difuso */
+  height: 100%;
+  padding: 20px;
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
+  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
+  margin: 5px;
+
+  /* Fondo rojo con efecto de difuminado */
+  background: radial-gradient(
+    circle,
+    rgba(135, 49, 49, 0.8) 10%,
+    rgba(250, 241, 241, 0) 100%
+  ); /* Gradiente de rojo a transparente */
+
+  /* Aplicamos el desenfoque */
+  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
+}
+
+/* Cuerpo de la tarjeta (donde estará el contenido) */
+.card_body_discord {
+  position: relative; /* Necesario para poder aplicar el fondo difuso */
+  height: 100%;
+  padding: 20px;
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
+  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
+  margin: 5px;
+
+  /* Fondo rojo con efecto de difuminado */
+  background: radial-gradient(
+    circle,
+    rgba(101, 121, 194, 0.5) 10%,
+    rgba(250, 241, 241, 0) 100%
+  ); /* Gradiente de rojo a transparente */
+
+  /* Aplicamos el desenfoque */
+  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
+}
+
+/* Cuerpo de la tarjeta (donde estará el contenido) */
+.card_body_instagram {
+  position: relative; /* Necesario para poder aplicar el fondo difuso */
+  height: 100%;
+  padding: 20px;
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
+  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
+  margin: 5px;
+
+  /* Fondo rojo con efecto de difuminado */
+  background: radial-gradient(
+    circle,
+    rgba(255, 28, 116, 0.5) 10%,
+    rgba(250, 241, 241, 0) 100%
+  ); /* Gradiente de rojo a transparente */
+
+  /* Aplicamos el desenfoque */
+  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
+}
+
+/* Cuerpo de la tarjeta (donde estará el contenido) */
+.card_body_tiktok {
+  position: relative; /* Necesario para poder aplicar el fondo difuso */
+  height: 100%;
+  padding: 20px;
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
+  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
+  margin: 5px;
+
+  /* Fondo rojo con efecto de difuminado */
+  background: radial-gradient(
+    circle,
+    rgba(8, 255, 249, 0.5) 10%,
+    rgba(250, 241, 241, 0) 100%
+  ); /* Gradiente de rojo a transparente */
+
+  /* Aplicamos el desenfoque */
+  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
+}
+
+/* Pseudo-elemento para el efecto de las esquinas oscuras */
+.border_card_social_media::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.7) 30%,
+    transparent 70%
+  ); /* Efecto de oscurecer las esquinas */
+  z-index: 0; /* Coloca el fondo oscuro detrás del contenido */
+  filter: blur(10px); /* Aplica un desenfoque para el fondo */
+  pointer-events: none; /* Asegura que el contenido sea accesible y no se vea afectado por el pseudo-elemento */
+}
+
+.difuminar_card {
+  position: absolute;
+  width: 110%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(180, 22, 22, 0) 0%, #101214 50%);
+  bottom: -50px;
+  left: -12px;
+  z-index: 300;
+  border-radius: 15px;
+}
+
+.container_title_card {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
+
+.container_logo_card {
+  width: 65px;
+}
+
+.container_logo_card img {
+  width: 100%;
+}
+
+.btn_suscripcion {
+  width: 240px;
+  height: 60px;
+  background: #c3302b;
+  color: #fff;
+  position: absolute;
+  z-index: 500;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 60px;
+  bottom: -30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn_suscripcion_discord {
+  width: 240px;
+  height: 60px;
+  background: #7289da;
+  color: #fff;
+  position: absolute;
+  z-index: 500;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 60px;
+  bottom: -30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn_suscripcion_instagram {
+  width: 240px;
+  height: 60px;
+  background: #ff1c74;
+  color: #fff;
+  position: absolute;
+  z-index: 500;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 60px;
+  bottom: -30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn_suscripcion_tiktok {
+  width: 240px;
+  height: 60px;
+  background: #08fff9;
+  color: #2a2929;
+  position: absolute;
+  z-index: 500;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 60px;
+  bottom: -30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #fff;
+}
