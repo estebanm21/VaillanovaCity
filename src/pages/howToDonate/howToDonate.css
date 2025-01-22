@@ -70,6 +70,19 @@
   gap: 10px;
 }
 
+@media (max-width: 1111px) {
+  .container_title_donations {
+    text-align: center;
+  }
+  .container_title_donations h1 {
+    text-align: center;
+  }
+
+  .container_title_donations h1 {
+    font-size: 32px;
+  }
+}
+
 .container_principal_payment_methods {
   width: 100%;
   height: auto;

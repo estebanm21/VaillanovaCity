@@ -104,7 +104,7 @@ export default function HowToDonate() {
                     <ParallaxDonation />
                 </div>
                 <h1 style={{ color: "#000", paddingTop: 120, textAlign: "center" }}>Como <span style={{ borderBottom: "3px solid #5C1A87" }}>donar</span></h1>
-                <div data-aos="fade-left" className="container_how_to_donate">
+                <div data-aos="fade-right" className="container_how_to_donate">
 
                     <div className="card_donation">
                         <div className="container_img_and_icon">

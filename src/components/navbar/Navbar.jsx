@@ -4,6 +4,8 @@ import "./Navbar.css"
 import "boxicons"
 import { Outlet, NavLink } from "react-router-dom"
 
+// pequeño comentario
+
 
 export default function Navbar() {
   return (

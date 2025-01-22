@@ -232,6 +232,28 @@
   }
 }
 
+@media (max-width: 1291px) {
+  .text_home,
+  .title,
+  .kode-text {
+    text-align: center;
+  }
+
+  .kode-text {
+    font-size: 23px;
+  }
+
+  .container_text {
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    margin: 0 auto;
+  }
+  .container_image {
+    margin: 0 auto;
+  }
+}
+
 body {
   background-color: var(--labs-sys-color-background);
   color: var(--labs-sys-color-on-background);
