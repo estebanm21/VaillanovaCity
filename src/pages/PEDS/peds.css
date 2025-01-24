@@ -8,7 +8,7 @@
   height: auto;
   /* background: red; */
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 90px 20px;
   display: flex;
@@ -27,7 +27,7 @@
   justify-content: center;
   padding: 10px;
   /* border: 1px solid #000; */
-  width: 235px;
+  width: 300px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
@@ -52,7 +52,7 @@
   width: 150px;
   position: absolute;
   top: -60px;
-  left: 35px;
+  left: 65px;
 }
 
 .container_logo_peds img {
