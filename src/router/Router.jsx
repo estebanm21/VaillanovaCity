@@ -4,6 +4,7 @@ import { GeneralRegulations } from "../pages/general-regulations/GeneralRegulati
 import Home from "../pages/home/Home"
 import BandsRegulations from "../pages/bands-regulations/BandsRegulations"
 import HowToDonate from "../pages/howToDonate/HowToDonate"
+import { Peds } from "../pages/PEDS/Peds"
 
 
 
@@ -15,6 +16,7 @@ export const Router = () => {
                     <Route path="inicio" element={<Home />}></Route>
                     <Route path="normativa-general" element={<GeneralRegulations />}></Route>
                     <Route path="normativa-de-bandas" element={<BandsRegulations />}></Route>
+                    <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
                     <Route path='*' element={<Navigate to={"/inicio"} />} />
                 </Route>

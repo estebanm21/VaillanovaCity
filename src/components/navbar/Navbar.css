@@ -413,3 +413,11 @@ strong {
 .nav-link:hover {
   color: #333; /* Cambia el color al pasar el mouse */
 }
+
+.container_vc_logo {
+  width: 75px;
+}
+
+.container_vc_logo img {
+  width: 100%;
+}

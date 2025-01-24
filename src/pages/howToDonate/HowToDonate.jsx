@@ -16,6 +16,7 @@ import logoDiscord_ from "../../assets/Discord.png"
 import logoInstagram from "../../assets/Instagram.png"
 import logoTikTok from "../../assets/TikTok.png"
 import ParallaxFeatures from "../../components/Smoke/ParallasFeatures";
+import mondeda from "../../assets/moneda.png"
 export default function HowToDonate() {
 
     useEffect(() => {
@@ -25,6 +26,7 @@ export default function HowToDonate() {
         <>
             <div data-aos="fade-right" className="container_principal_products">
                 <div className="container_products">
+
                     <div className="container_title_donations">
                         <h1>Dona y apoya a <span style={{ color: "#BB33FF" }}>Villanova City</span></h1>
                         <p>Tu apoyo nos ayuda a mantener los costos del servidor, implementar nuevas
@@ -32,6 +34,15 @@ export default function HowToDonate() {
                         </p>
                     </div>
                     <div data-aos="fade-up" className="container_img_products">
+                        <div className="container_moneda_1">
+                            <img src={mondeda} alt="" />
+                        </div>
+                        <div className="container_moneda_2">
+                            <img src={mondeda} alt="" />
+                        </div>
+                        <div className="container_moneda_3">
+                            <img src={mondeda} alt="" />
+                        </div>
                         <img src={imgProducts} alt="" />
                         <div className="difuminar_img_products"></div>
                     </div>
@@ -43,7 +54,7 @@ export default function HowToDonate() {
                 <h1 style={{ textAlign: "center", }}><span style={{ borderBottom: "3px solid #bb33ff" }}>Metodos</span> de pago</h1>
                 <div data-aos="fade-right" data-aos-duration="1000" className="container_payment_methods">
 
-                    <div class="card">
+                    <div className="card">
                         <div className="container_principal_logo">
                             <div className="container_logo">
                                 <img src={bizum} alt="" />
@@ -53,7 +64,7 @@ export default function HowToDonate() {
 
                     </div>
 
-                    <div class="card">
+                    <div className="card">
                         <div className="container_principal_logo">
                             <div className="container_logo">
                                 <img src={cripto} alt="" />
@@ -63,7 +74,7 @@ export default function HowToDonate() {
 
                     </div>
 
-                    <div class="card">
+                    <div className="card">
                         <div className="container_principal_logo">
                             <div className="container_logo">
                                 <img src={paypalLogo} alt="" />
@@ -73,7 +84,7 @@ export default function HowToDonate() {
 
                     </div>
 
-                    <div class="card">
+                    <div className="card">
                         <div className="container_principal_logo">
                             <div className="container_logo">
                                 <img src={paysafecard} alt="" />
@@ -83,7 +94,7 @@ export default function HowToDonate() {
 
                     </div>
 
-                    <div class="card">
+                    <div className="card">
                         <div className="container_principal_logo">
                             <div className="container_logo">
                                 <img src={revolut} alt="" />

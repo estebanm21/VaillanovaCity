@@ -3,6 +3,7 @@ import LogoFiveM from "../LogoFiveM"
 import "./Navbar.css"
 import "boxicons"
 import { Outlet, NavLink } from "react-router-dom"
+import vcLogo from "../../assets/VC_logo.png"
 
 // pequeño comentario
 
@@ -12,7 +13,11 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg navbar-custom">
         <div className="container-fluid px-5 py-2">
-          <a className="navbar-brand" href="#">Logo Aqui</a>
+          <a className="navbar-brand" href="#">
+            <div className="container_vc_logo">
+              <img src={vcLogo} alt="" />
+            </div>
+          </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -52,7 +57,7 @@ export default function Navbar() {
                   <li> <NavLink to="/como-donar" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Como donar</NavLink></li>
                   <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Vehículos VIPS(aviones y barcos)</a></li>
                   <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Casas Premium</a></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>PEDS y multicaracter</a></li>
+                  <li> <NavLink to="/peds-multicaracter" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>PEDS y multicaracter</NavLink></li>
                   <li> <NavLink to="/normativa-de-bandas" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Rango de donación</NavLink></li>
 
                 </ul>

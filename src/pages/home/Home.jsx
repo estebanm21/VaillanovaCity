@@ -19,6 +19,7 @@ import logoInstagram from "../../assets/Instagram.png"
 import logoTikTok from "../../assets/TikTok.png"
 
 
+
 export default function Home() {
 
     useEffect(() => {
@@ -54,6 +55,8 @@ export default function Home() {
 
 
                 <div className="container_info_home">
+
+
 
                     <div className="container_text">
 

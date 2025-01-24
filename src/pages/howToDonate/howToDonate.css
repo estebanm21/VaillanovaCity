@@ -83,6 +83,64 @@
   }
 }
 
+.container_moneda_1 {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 130px;
+  right: 300px;
+}
+.container_moneda_1 img {
+  width: 100%;
+  filter: blur(1.4px);
+}
+
+.container_moneda_2 {
+  width: 140px;
+  position: absolute;
+  z-index: 400;
+  top: 10px;
+  right: 1px;
+  height: 140px;
+  transform: rotate(150deg);
+}
+.container_moneda_2 img {
+  width: 100%;
+}
+
+.container_moneda_3 {
+  width: 180px;
+  position: absolute;
+  z-index: 400;
+  bottom: 70px;
+  right: 1px;
+  height: 140px;
+  transform: rotate(40deg);
+}
+.container_moneda_3 img {
+  width: 100%;
+  filter: blur(2px);
+}
+
+@media (max-width: 453px) {
+  .container_moneda_1 {
+    width: 100px;
+    left: 20px;
+    top: 90px;
+  }
+
+  .container_moneda_2 {
+    width: 90px;
+    right: 20px;
+  }
+
+  .container_moneda_3 {
+    width: 140px;
+    right: 50px;
+    bottom: 30px;
+  }
+}
+
 .container_principal_payment_methods {
   width: 100%;
   height: auto;
