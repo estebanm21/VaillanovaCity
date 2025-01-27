@@ -25,6 +25,28 @@ export default function HowToDonate() {
     return (
         <>
             <div data-aos="fade-right" className="container_principal_products">
+                <div className="bubbless">
+                    <span style={{ "--i": 11, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 12, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 24, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 10, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 14, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 23, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 18, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 16, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 19, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 20, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 22, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 25, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 18, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 21, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 15, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 13, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 26, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 17, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 13, backgroundImage: `url(${mondeda})` }}></span>
+                    <span style={{ "--i": 28, backgroundImage: `url(${mondeda})` }}></span>
+                </div>
                 <div className="container_products">
 
                     <div className="container_title_donations">
@@ -110,6 +132,8 @@ export default function HowToDonate() {
 
 
             <div className="container_principal_how_to_donate">
+
+
 
                 <div className="container_parallax_donation">
                     <ParallaxDonation />

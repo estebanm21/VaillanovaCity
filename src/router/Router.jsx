@@ -5,6 +5,7 @@ import Home from "../pages/home/Home"
 import BandsRegulations from "../pages/bands-regulations/BandsRegulations"
 import HowToDonate from "../pages/howToDonate/HowToDonate"
 import { Peds } from "../pages/PEDS/Peds"
+import { DotanitonRange } from "../pages/donationRange/DotanitonRange"
 
 
 
@@ -18,6 +19,10 @@ export const Router = () => {
                     <Route path="normativa-de-bandas" element={<BandsRegulations />}></Route>
                     <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
+
+                    <Route path="rango-de-donacion" element={<DotanitonRange />}></Route>
+
+
                     <Route path='*' element={<Navigate to={"/inicio"} />} />
                 </Route>
             </Routes>

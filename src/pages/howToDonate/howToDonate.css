@@ -27,6 +27,7 @@
   position: relative;
   width: 470px;
   display: inline-block;
+  /* background: red; */
 }
 
 .container_img_products img {
@@ -85,10 +86,10 @@
 
 .container_moneda_1 {
   width: 150px;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 130px;
-  right: 300px;
+  top: 240px;
+  right: 0px;
 }
 .container_moneda_1 img {
   width: 100%;
@@ -636,4 +637,37 @@
 
 a:hover {
   color: #fff;
+}
+
+.bubbless {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 4000;
+}
+
+.bubbless span {
+  position: relative;
+  width: 40px; /* Ajusta según el tamaño de la imagen */
+  height: 40px; /* Ajusta según el tamaño de la imagen */
+  margin: 0 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%; /* Solo si quieres que sigan siendo redondeadas */
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+.bubbless span:nth-child(even) {
+  background-size: cover; /* Para que las imágenes pares se ajusten diferente */
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
 }
