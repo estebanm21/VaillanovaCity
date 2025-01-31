@@ -17,6 +17,7 @@ import logoYoutube from "../../assets/Youtube.png"
 import logoDiscord_ from "../../assets/Discord.png"
 import logoInstagram from "../../assets/Instagram.png"
 import logoTikTok from "../../assets/TikTok.png"
+import win from "../../assets/win.png"
 
 
 
@@ -180,6 +181,17 @@ export default function Home() {
                         </div>
                         <p>Disfruta de un servidor optimizado con FPS estables en
                             todo momento.</p>
+                    </div>
+
+                    <div data-aos="flip-down" duration="1000" className="card_feature">
+                        <div className="container_title_card">
+                            <div className="icon_title_card">
+                                <img src={win} alt="" />
+                            </div>
+                            <h2>SIN PAY-TO-WIN
+                            </h2>
+                        </div>
+                        <p>En nuestro servidor no necesitas pagar para progresar.</p>
                     </div>
                 </div>
 

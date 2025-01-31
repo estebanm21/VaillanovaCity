@@ -30,7 +30,9 @@ export const DotanitonRange = () => {
                         <h1>0-50€</h1>
                     </div>
                     <div className="container_description_peds">
-
+                        <ul>
+                            <li> Rol exclusivo en Discord</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -43,9 +45,13 @@ export const DotanitonRange = () => {
                     </div>
 
                     <div className="container_price">
-                        <h1>60-100€</h1>
+                        <h1>50-100€</h1>
                     </div>
                     <div className="container_description_peds">
+                        <ul>
+                            <li>Rol exclusivo en Discord</li>
+                            <li>Acceso exclusivo a sorteos mensuales donde solo los Donadores VIP+ podrán participar</li>
+                        </ul>
 
                     </div>
                 </div>
@@ -59,9 +65,15 @@ export const DotanitonRange = () => {
                     </div>
 
                     <div className="container_price">
-                        <h1>150-200€</h1>
+                        <h1>100-200€</h1>
                     </div>
                     <div className="container_description_peds">
+                        <ul>
+                            <li>Rol exclusivo en Discord</li>
+                            <li>Acceso exclusivo a sorteos mensuales donde solo los Donadores Élite podrán participar</li>
+                            <li>Vehículo exclusivo de Donador Élite</li>
+                            <li>Acceso a los eventos únicos</li>
+                        </ul>
 
                     </div>
                 </div>
@@ -75,9 +87,17 @@ export const DotanitonRange = () => {
                     </div>
 
                     <div className="container_price">
-                        <h1>250-400€</h1>
+                        <h1>200-400€</h1>
                     </div>
                     <div className="container_description_peds">
+                        <ul>
+                            <li>Rol exclusivo en Discord</li>
+                            <li>Acceso exclusivo a sorteos mensuales donde solo los Donadores Supremo podrán participar</li>
+                            <li>Vehículo exclusivo de Donador Supremo</li>
+                            <li>Acceso a los eventos únicos</li>
+                            <li>Mención en la web del servidor</li>
+                            <li>Ropa donador exclusiva</li>
+                        </ul>
 
                     </div>
                 </div>
@@ -95,6 +115,15 @@ export const DotanitonRange = () => {
                         <h1>500+ €</h1>
                     </div>
                     <div className="container_description_peds">
+                        <ul>
+                            <li>Rol exclusivo en Discord.</li>
+                            <li>Acceso exclusivo a sorteos mensuales donde solo los Donadores Legendarios podrán participar.</li>
+                            <li>Vehículo exclusivo de Donador Legendario.</li>
+                            <li>Yate y jet privado exclusivos.</li>
+                            <li>Acceso prioritario a eventos únicos.</li>
+                            <li>Mención destacada en la web del servidor.</li>
+                            <li>Conjunto de ropa exclusiva para donadores legendarios.</li>
+                        </ul>
 
                     </div>
                 </div>

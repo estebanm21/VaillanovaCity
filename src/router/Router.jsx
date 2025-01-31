@@ -6,6 +6,7 @@ import BandsRegulations from "../pages/bands-regulations/BandsRegulations"
 import HowToDonate from "../pages/howToDonate/HowToDonate"
 import { Peds } from "../pages/PEDS/Peds"
 import { DotanitonRange } from "../pages/donationRange/DotanitonRange"
+import Cars from "../pages/cars/Cars"
 
 
 
@@ -19,6 +20,8 @@ export const Router = () => {
                     <Route path="normativa-de-bandas" element={<BandsRegulations />}></Route>
                     <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
+
+                    <Route path="vehiculos-vips" element={<Cars />}></Route>
 
                     <Route path="rango-de-donacion" element={<DotanitonRange />}></Route>
 

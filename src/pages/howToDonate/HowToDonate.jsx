@@ -15,8 +15,8 @@ import logoYoutube from "../../assets/Youtube.png"
 import logoDiscord_ from "../../assets/Discord.png"
 import logoInstagram from "../../assets/Instagram.png"
 import logoTikTok from "../../assets/TikTok.png"
-import ParallaxFeatures from "../../components/Smoke/ParallasFeatures";
 import mondeda from "../../assets/moneda.png"
+import ParallaxFeaturesProducts from "../../components/ParallaxfeaturesProducts"
 export default function HowToDonate() {
 
     useEffect(() => {
@@ -50,7 +50,7 @@ export default function HowToDonate() {
                 <div className="container_products">
 
                     <div className="container_title_donations">
-                        <h1>Dona y apoya a <span style={{ color: "#BB33FF" }}>Villanova City</span></h1>
+                        <h1>Dona y apoya a <span style={{ color: "#BB33FF" }}>Vilanova City</span></h1>
                         <p>Tu apoyo nos ayuda a mantener los costos del servidor, implementar nuevas
                             funciones y mejorar la experiencia para todos los jugadores.
                         </p>
@@ -317,7 +317,7 @@ export default function HowToDonate() {
 
                     <div className="card_other_products">
 
-                        <div className="header_card">
+                        <div className="header_card_visor">
                             <div className="container_img_card_products_visor">
                                 <img src={visor} alt="" />
                             </div>
@@ -330,7 +330,7 @@ export default function HowToDonate() {
 
                             <div className="container_price">
                                 <div>Precio desde:</div>
-                                <h1>9,99 € </h1>
+                                <h1>4,99 € </h1>
                             </div>
                         </div>
 
@@ -353,7 +353,7 @@ export default function HowToDonate() {
 
 
             <div className="container_socialmedia">
-                <ParallaxFeatures />
+                <ParallaxFeaturesProducts />
                 <h1 data-aos="fade-right" style={{ textAlign: "center", color: "#fff", marginTop: 50, marginBottom: 50 }}>Únete a nuestra comunidad</h1>
 
                 <div className="container_cards_socialmedia">

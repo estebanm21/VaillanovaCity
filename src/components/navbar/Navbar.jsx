@@ -55,7 +55,7 @@ export default function Navbar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li> <NavLink to="/como-donar" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Como donar</NavLink></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Vehículos VIPS(aviones y barcos)</a></li>
+                  <li><NavLink to="/vehiculos-vips" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Vehículos VIPS(aviones y barcos)</NavLink></li>
                   <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Casas Premium</a></li>
                   <li> <NavLink to="/peds-multicaracter" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>PEDS y multicaracter</NavLink></li>
                   <li> <NavLink to="/rango-de-donacion" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Rango de donación</NavLink></li>
