@@ -144,10 +144,9 @@ export default function Home() {
                             <div className="icon_title_card">
                                 <img src={imgWhiteList} alt="" />
                             </div>
-                            <h2>SIN WHITELIST</h2>
+                            <h2>CON WHITELIST</h2>
                         </div>
-                        <p>Nuestro servidor no tiene whitelist, por lo tanto puedes entrar sin
-                            ninguna complicación.</p>
+                        <p>Nuestro servidor cuenta con whitelist, por lo que necesitarás ser aprobado para poder entrar.</p>
                     </div>
 
                     <div data-aos="fade-up" duration="1000" className="card_feature">
