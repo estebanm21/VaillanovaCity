@@ -31,6 +31,15 @@
   transition: all ease 300ms;
 }
 
+.card_peds_multicaracter h4 {
+  border-bottom: 3px solid #fe53bb;
+  display: inline;
+}
+
+.card_peds_multicaracter p {
+  margin-top: 20px;
+}
+
 .card_peds_multicaracter:hover {
   transform: scale(1.1);
 }

@@ -282,14 +282,11 @@ body {
 
 .container_info_list {
   max-width: 1200px;
-  /* height: auto; */
-  /* min-height: 100vh; */
-  /* border: 1px solid #000; */
   width: 100%;
   margin: 0 auto;
   padding-top: 150px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20px;
   gap: 70px;

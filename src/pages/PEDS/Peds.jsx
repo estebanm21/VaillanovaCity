@@ -15,9 +15,9 @@ export const Peds = () => {
                 <h1 >Peds Y Multicaracter</h1>
                 <div className="container_peds_cards">
                     <div className="card_peds_multicaracter">
-                        <h4>Ped vanilla - 4,99€
+                        <h4 >Ped vanilla - 4,99€
                         </h4>
-                        <p>Personaliza tu experiencia en VilanovaCity con una PED clásica y destaca en el
+                        <p >Personaliza tu experiencia en VilanovaCity con una PED clásica y destaca en el
                             servidor!
                         </p>
                     </div>

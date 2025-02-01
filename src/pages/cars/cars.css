@@ -48,8 +48,9 @@
   height: auto;
   text-align: left;
   margin: 0 auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   color: #fff;
+  /* background: blue; */
 }
 
 .container_title_cars h2 {
@@ -79,7 +80,7 @@
 .card_cars {
   height: auto;
   width: 420px;
-  /* background: red; */
+  /* background: blue; */
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -97,15 +98,15 @@
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #fff;
+  /* background: red; */
 }
 
 .container_how_to_get_a_car {
   max-width: 1200px;
   padding: 20px;
-  height: 400px;
-  /* background: red; */
+  height: auto;
 
   margin: 0 auto;
 }
