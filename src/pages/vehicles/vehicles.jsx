@@ -33,7 +33,7 @@ export default function Vehicles() {
 
                 {/* card 1 */}
 
-                <div className="container">
+                <div className="container_vehicles">
                     <div className="wrapper">
                         <div style={backgrondCar} className="banner-image"> </div>
                         <h1>Coches</h1>
@@ -50,7 +50,7 @@ export default function Vehicles() {
                 </div>
 
                 {/* card 2 */}
-                <div className="container">
+                <div className="container_vehicles">
                     <div className="wrapper">
                         <div style={backgrondBarco} className="banner-image"> </div>
                         <h1>Barcos</h1>
@@ -67,7 +67,7 @@ export default function Vehicles() {
                 </div>
 
                 {/* card 3 */}
-                <div className="container">
+                <div className="container_vehicles">
                     <div className="wrapper">
                         <div style={backgrondJet} className="banner-image"> </div>
                         <h1>Jets</h1>
