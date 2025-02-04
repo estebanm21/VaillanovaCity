@@ -38,12 +38,16 @@ export default function Navbar() {
                   Normativa
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li> <NavLink to="/normativa-general" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa general</NavLink></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Conceptos básicos</a></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Comandos importantes</a></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>LSPD</a></li>
+                  <li> <NavLink to="/normativa-general" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa General</NavLink></li>
+                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa Policia Local</a></li>
+                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa Cruz Vilanova</a></li>
                   <li> <NavLink to="/normativa-de-bandas" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa de Bandas</NavLink></li>
-                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa de locales</a></li>
+                  {/* <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Conceptos básicos</a></li> */}
+                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa de Locales</a></li>
+                  <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Comandos Importantes</a></li>
+
+
+
                 </ul>
               </div>
 
