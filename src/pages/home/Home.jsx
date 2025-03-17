@@ -133,7 +133,7 @@ export default function Home() {
                         </div>
                         <div><h4>3230+</h4></div>
                         <div className="separator"></div>
-                        <h6>JUGADORES ACTIVOS</h6>
+                        <h6 style={{ textAlign: "center" }}>JUGADORES ACTIVOS</h6>
                     </div>
 
                     <div className="container_btns_servidor">
