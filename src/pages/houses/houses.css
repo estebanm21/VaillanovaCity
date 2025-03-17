@@ -1,0 +1,77 @@
+.container_principal_houses {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+  background-image: url("../../assets/background_vehicles.svg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.container_title_houses_principal h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.container_text_houses {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.container_text_houses p {
+  color: #fff;
+}
+
+.container_img_man_houses {
+  width: 180px;
+  position: absolute;
+  right: 140px;
+  top: 30px;
+  z-index: -1;
+}
+
+.container_img_man_houses img {
+  width: 100%;
+}
+
+@media (max-width: 1438px) {
+  .container_card_cars {
+    margin-top: 160px;
+  }
+
+  .container_img_man_houses {
+    top: 260px;
+    width: 160px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 732px) {
+  .container_img_man_houses {
+    top: 300px;
+    width: 160px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container_img_man_houses {
+    top: 450px;
+    width: 160px;
+    right: 130px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container_img_man_houses {
+    top: 480px;
+    width: 160px;
+    right: 100px;
+  }
+}

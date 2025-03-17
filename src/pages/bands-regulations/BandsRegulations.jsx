@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./bandsRgegulations.css";
 import AOS from "aos"
+import borderTitle from "../../assets/border_title.png"
 
 export default function BandsRegulations() {
     useEffect(() => {
@@ -8,7 +9,12 @@ export default function BandsRegulations() {
     }, [])
     return (
         <div data-aos="fade-right" className="regulations-container">
-            <h1>Normativa Bandas</h1>
+            <div className="container_title_cars_disponibles">
+                <h1 style={{ textAlign: "center" }}>Normativa de bandas</h1>
+                <div style={{ marginBottom: "50px" }} className="container_border_title_cars_disponibles">
+                    <img src={borderTitle} alt="" />
+                </div>
+            </div>
 
             <div className="regulation-item">
                 <h2>1. Definición y Estructura de las Bandas</h2>
@@ -19,7 +25,9 @@ export default function BandsRegulations() {
                     <li><strong>Subjefes:</strong> Asisten al líder y gestionan tareas específicas.</li>
                     <li><strong>Miembros:</strong> Ejecutan las actividades operativas.</li>
                 </ul>
-                <p>Es obligatorio que cada banda cuente con una historia y motivación justificadas y acordes al contexto del servidor.</p>
+                <p>Es obligatorio que cada banda cuente con una historia y motivación justificadas y
+                    acordes al contexto del servidor.
+                </p>
             </div>
 
             <div className="regulation-item">
@@ -59,24 +67,54 @@ export default function BandsRegulations() {
                 <h2>5. Actividades Permitidas para Bandas</h2>
                 <p>Las bandas pueden participar en actividades delictivas, siempre respetando las normas de rol del servidor:</p>
                 <ul>
-                    <li>Robos a tiendas, casas, vehículos, y NPCs.</li>
-                    <li>Secuestros justificados, respetando Fairplay.</li>
-                    <li>Tráfico ilegal: drogas, productos falsificados.</li>
-                    <li>Ajustes de cuentas y enfrentamientos por territorio.</li>
-                    <li>Extorsión a negocios o civiles.</li>
+                    <li>Robos: Incluye robos a tiendas, casas, vehículos, y NPCs. Y también robos no tan
+                        frecuentes como flecca, yate...
+                    </li>
+                    <li>Secuestros: Solo se permite con motivos justificados, respetando las reglas de
+                        Fairplay y no forzando el rol.</li>
+                    <li>Tráfico ilegal: Venta y distribución de drogas, productos falsificados...</li>
+                    <li>Ajustes de cuentas: Venganza entre bandas o enfrentamientos por territorio.</li>
+                    <li>Extorsión: Pedir dinero a negocios o civiles a cambio de “protección”.
+                    </li>
                 </ul>
             </div>
 
             <div className="regulation-item">
                 <h2>6. Enfrentamientos y Guerras de Bandas</h2>
-                <p><strong>Declaración de Conflicto:</strong> Requiere justificación lógica y aprobación del staff.</p>
-                <p><strong>Reglas:</strong></p>
+
+                <p><strong>6.1 Declaración de Conflicto:</strong></p>
+
                 <ul>
-                    <li>Máximo 6 participantes por banda en cada enfrentamiento.</li>
-                    <li>Evitar zonas protegidas y de civiles.</li>
-                    <li>Armas de alto calibre solo con autorización.</li>
-                    <li>Cooldown de 72 horas tras una guerra.</li>
+                    <li>Cualquier guerra o enfrentamiento entre bandas debe tener una justificación
+                        lógica y ser aprobada por el staff.</li>
+                    <li>Está prohibido provocar guerras basándose en conflictos OOC o razones
+                        insuficientes.</li>
+
                 </ul>
+
+
+                <p><strong>6.2 Reglas para Guerras:</strong></p>
+
+                <ul>
+                    <li>Máximo 6 participantes activos por banda en cada enfrentamiento.
+                    </li>
+                    <li>Los enfrentamientos deben realizarse en zonas alejadas de civiles y lugares
+                        protegidos como hospitales o comisarías.
+                    </li>
+
+                    <li>Las armas de alto calibre solo están permitidas si el staff lo autoriza previamente.
+                    </li>
+
+                    <li>Cooldown: Una vez finalizada una guerra, debe respetarse un periodo de 72
+                        horas antes de iniciar un nuevo conflicto con la misma banda.
+
+                    </li>
+
+                </ul>
+
+
+
+
             </div>
 
             <div className="regulation-item">

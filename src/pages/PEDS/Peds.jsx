@@ -1,6 +1,16 @@
 import "./peds.css"
 import AOS from "aos"
 import { useEffect } from "react"
+import borderTitle from "../../assets/border_title.png"
+import carPed1 from "../../assets/ped_vanilla.png"
+import carPed2 from "../../assets/ped_2.png"
+import carPed3 from "../../assets/ped_3.png"
+import carPed4 from "../../assets/ped_4.png"
+import carPed5 from "../../assets/ped_5.png"
+import carPed6 from "../../assets/ped_6.png"
+import carPed7 from "../../assets/ped_7.png"
+import SocialMedia from "../../components/socialMedia/SocialMedia"
+import womenPeds from "../../assets/woman_peds.png"
 
 export const Peds = () => {
 
@@ -12,97 +22,45 @@ export const Peds = () => {
 
         <>
             <div data-aos="fade-right" className="container_principal_cards_peds">
-                <h1 >Peds Y Multicaracter</h1>
+                <div className="container_title_cars_disponibles">
+                    <h1 style={{ textAlign: "center" }}>Peds y multicaracter</h1>
+                    <div className="container_border_title_cars_disponibles">
+                        <img src={borderTitle} alt="" />
+                    </div>
+                </div>
+
+
+
+                <div className="container_women_peds">
+                    <img src={womenPeds} alt="" />
+                </div>
+
+
+
+
                 <div className="container_peds_cards">
-                    <div className="card_peds_multicaracter">
-                        <h4 >Ped vanilla - 4,99€
-                        </h4>
-                        <p >Personaliza tu experiencia en VilanovaCity con una PED clásica y destaca en el
-                            servidor!
-                        </p>
+
+                    <div className="card_ped">
+                        <img src={carPed1} alt="" />
                     </div>
-                    <div className="card_peds_multicaracter">
-                        <h4>Ped a elegir - 9,99€
-                        </h4>
-                        <p>Haz que tu personaje sea único eligiendo la PED que más te guste de nuestro
-                            catálogo y marca tu estilo en VilanovaCity!
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed2} alt="" />
                     </div>
-
-
-                    <div className="card_peds_multicaracter">
-                        <h4>Ped única en el servidor - 14,99€
-
-                        </h4>
-                        <p>Destácate del resto con una PED exclusiva solo para ti en VilanovaCity y marca la
-                            diferencia! El precio no incluye el costo del modelo de la ped en caso de ser de
-                            pago.
-
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed3} alt="" />
                     </div>
-
-
-
-
-                    <div className="card_peds_multicaracter">
-                        <h4>Slot para segundo personaje - 9,99€
-
-
-                        </h4>
-                        <p>Desbloquea un nuevo personaje y vive más aventuras en VilanovaCity!
-
-
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed4} alt="" />
                     </div>
-
-                    <div className="card_peds_multicaracter">
-                        <h4>Slot para segundo personaje + Ped vanilla - 12,99€
-
-
-
-                        </h4>
-                        <p>Duplica tu diversión con un nuevo personaje y destaca con una PED vanilla
-                            en VilanovaCity!
-
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed5} alt="" />
                     </div>
-
-                    <div className="card_peds_multicaracter">
-                        <h4>Slot para segundo personaje + Ped a elegir - 14,99€
-
-
-
-
-                        </h4>
-                        <p>Duplica tu diversión con un nuevo personaje y elige la PED que más te guste de
-                            nuestra lista para destacar en VilanovaCity!
-
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed6} alt="" />
                     </div>
-
-
-
-
-                    <div className="card_peds_multicaracter">
-                        <h4>Slot para segundo personaje + Ped única - 19,99€
-
-
-
-
-                        </h4>
-                        <p>Expande tu aventura con un nuevo personaje y consigue una PED exclusiva solo
-                            para ti, destacando como nadie en VilanovaCity! El precio no incluye el costo del
-                            modelo de la ped en caso de ser de pago.
-
-
-                        </p>
+                    <div className="card_ped">
+                        <img src={carPed7} alt="" />
                     </div>
-
-
-
-
-
-
 
 
 
@@ -112,12 +70,16 @@ export const Peds = () => {
 
             </div>
 
-            <div className="container_tickets">
+            <SocialMedia />
+
+            {/* <div className="container_tickets">
                 <h1>Ábrenos un ticket y te
                     ayudaremos enseguida!
                 </h1>
                 <button class="button">Canal de tickets</button>
-            </div>
+            </div> */}
+
+
 
 
 

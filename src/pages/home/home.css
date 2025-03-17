@@ -52,7 +52,7 @@
 .container_info_home {
   max-width: 1200px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -60,47 +60,49 @@
   /* background: red; */
   padding: 40px 0px;
 
-  gap: 12px;
+  gap: 14px;
   /* position: relative; */
   /* background: red; */
   min-height: 100vh;
-  flex-wrap: wrap;
 }
 
 .container_text {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
-  gap: 12px;
-  max-width: 700px;
+  gap: 5px;
+  /* max-width: 800px; */
   width: 100%;
   /* background: red; */
-  padding: 10px;
+
+  padding: 0px 10px;
 }
 
 .text_home {
-  max-width: 600px;
+  /* max-width: 600px; */
   width: 100%;
   height: auto;
   text-align: left;
   color: #7f8793;
   font-size: 18px;
+  text-align: center;
 }
 
 .title {
   font-weight: 900;
   font-family: "Roboto", serif;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   width: 100%;
   height: auto;
-  text-align: left;
 }
 
 .container_image {
-  width: 480px;
+  max-width: 1080px;
+  width: 100%;
   position: relative;
   display: inline-block;
+  /* background: red; */
 }
 
 .character {
@@ -108,10 +110,10 @@
   position: relative;
   z-index: 1;
   /* Asegurando que la imagen tenga un contorno blanco difuso */
-  filter: drop-shadow(
+  /* filter: drop-shadow(
     0 0 20px rgba(255, 255, 255, 0.7)
-  ); /* Ajusta la intensidad y tamaño de la sombra */
-  border-radius: 8px; /* Si quieres bordes redondeados, esto es opcional */
+  );
+  border-radius: 8px;  */
 }
 
 .btn_discord_home {
@@ -129,6 +131,148 @@
   border-radius: 8px; /* Opcional, diseño redondeado */
   overflow: visible;
   border: 1px solid #bb33ff;
+}
+
+.btn_players {
+  background: #262626;
+  max-width: 370px;
+  width: 100%;
+  color: #fff;
+  height: 50px;
+  padding: 5px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container_btn_active {
+  width: 22px;
+  height: 22px;
+  background: #1e6438;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_active {
+  width: 12px;
+  height: 12px;
+  background: #16a34a;
+  border-radius: 50%;
+}
+
+.container_btn_active img {
+  width: 100%;
+}
+
+.separator {
+  width: 3px;
+  height: 25px;
+  background: #404040;
+  border-radius: 2px;
+}
+
+.container_btns_servidor {
+  max-width: 460px;
+  /* padding: 10px; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  /* background: red; */
+}
+
+.container_principal_beneficios_home {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.container_beneficios_home {
+  max-width: 1200px;
+  width: 100%;
+  /* height: 500px; */
+  /* background: red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.container_rombo {
+  position: absolute;
+  top: -100px;
+  right: 50px;
+  width: 330px;
+  z-index: 0;
+}
+
+.container_rombo img {
+  width: 100%;
+}
+
+.contariner_img_rol {
+  width: 100%;
+  max-width: 388px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contariner_img_rol img {
+  width: 100%;
+}
+
+.contariner_img_autoRol {
+  width: 100%;
+  max-width: 420px;
+  z-index: 2;
+}
+
+.contariner_img_autoRol img {
+  width: 100%;
+}
+
+.btn_servidor {
+  width: 200px;
+  height: 45px;
+  background: #305ee3;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.btn_descubre_mas {
+  width: 190px;
+  height: 45px;
+  background: transparent;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border: 2px solid #b127f2;
+}
+
+@media (max-width: 534px) {
+  .btn_servidor,
+  .btn_descubre_mas {
+    width: 100%;
+  }
 }
 
 @property --angle {
@@ -163,14 +307,13 @@
   perspective: 40px;
 
   color: transparent; /* Hacemos el texto transparente para aplicar el degradado */
-  font-size: 3em; /* Tamaño del texto */
+  font-size: 2.5em; /* Tamaño del texto */
   font-weight: bold; /* Estilo de fuente */
-  text-align: left;
+  text-align: center;
   background-image: linear-gradient(
     45deg,
-    #fdb428,
-    #f672ca,
-    #b9f
+    #b127f2,
+    #305ee3
   ); /* Degradado de colores */
   -webkit-background-clip: text; /* Aplica el fondo solo al texto */
   background-clip: text; /* Aplica el fondo solo al texto */
@@ -179,8 +322,9 @@
   font-style: normal;
 
   /* background: red; */
-  width: 400px;
+  width: 800px;
   height: auto;
+  margin: 0 auto;
 }
 
 .kode-text:after {
@@ -273,15 +417,60 @@ body {
 }
 
 .container_list_features {
+  margin-top: 50px;
   height: auto;
+  min-height: 100vh;
   width: 100%;
-  background: #fafafa;
+  /* background: #101214; */
   /* padding: 0px 50px; */
+  background-image: url("../../assets/background_featuresss.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   position: relative;
 }
 
+.container_work {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container_man_features {
+  width: 230px;
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+}
+
+.container_man_features img {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .container_man_features {
+    bottom: -170px;
+    z-index: 200;
+    width: 170px;
+    left: 30px;
+  }
+}
+
+.containet_list_works {
+  width: 600px;
+  height: 610px;
+  background-image: url("../../assets/trabajo_img.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .container_info_list {
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding-top: 150px;
@@ -289,18 +478,47 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  gap: 70px;
+  gap: 50px;
   flex-wrap: wrap;
   padding-left: 50px;
   padding-right: 50px;
 }
 
+.container_imgs_work {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  /* background: red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.container_img_work {
+  width: 480px;
+}
+.container_img_work img {
+  width: 100%;
+}
+
 .card_feature {
-  width: 500px;
-  /* height: 200px; */
+  width: 350px;
+  border-radius: 20px;
+  height: auto;
+  min-height: 350px;
   /* border: 1px solid red; */
-  padding: 5px;
-  color: #6c757d;
+  padding: 20px;
+  color: #fff;
+  background: #262626;
+  display: flex;
+
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card_feature h2 {
+  font-weight: 600;
 }
 
 .card_feature p {
@@ -320,266 +538,4 @@ body {
 
 .icon_title_card img {
   width: 100%;
-}
-
-.container_socialmedia {
-  width: 100%;
-
-  background: #101214;
-}
-
-.container_cards_socialmedia {
-  /* border: 1px solid red; */
-  width: 100%;
-  max-width: 1400px;
-  padding: 20px;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 55px;
-  flex-wrap: wrap;
-  overflow: hidden;
-  padding-bottom: 100px;
-}
-/* Contenedor de la tarjeta */
-/* Contenedor de la tarjeta */
-.border_card_social_media {
-  width: 380px;
-  height: 190px;
-  border-radius: 20px;
-  position: relative;
-  border: 5px solid rgba(255, 0, 0, 0.5); /* Rojo con 50% de opacidad */
-}
-
-.border_card_social_media_discord {
-  width: 380px;
-  height: 190px;
-  border-radius: 20px;
-  position: relative;
-  border: 5px solid rgba(114, 137, 218, 0.5);
-}
-
-.border_card_social_media_instagram {
-  width: 380px;
-  height: 190px;
-  border-radius: 20px;
-  position: relative;
-  border: 5px solid rgba(255, 28, 116, 0.5);
-}
-
-.border_card_social_media_tiktok {
-  width: 380px;
-  height: 190px;
-  border-radius: 20px;
-  position: relative;
-  border: 5px solid rgba(8, 255, 249, 0.5);
-}
-
-/* Cuerpo de la tarjeta (donde estará el contenido) */
-.card_body {
-  position: relative; /* Necesario para poder aplicar el fondo difuso */
-  height: 100%;
-  padding: 20px;
-  color: white; /* Color del texto */
-  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
-  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
-  margin: 5px;
-
-  /* Fondo rojo con efecto de difuminado */
-  background: radial-gradient(
-    circle,
-    rgba(135, 49, 49, 0.8) 10%,
-    rgba(250, 241, 241, 0) 100%
-  ); /* Gradiente de rojo a transparente */
-
-  /* Aplicamos el desenfoque */
-  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
-  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
-}
-
-/* Cuerpo de la tarjeta (donde estará el contenido) */
-.card_body_discord {
-  position: relative; /* Necesario para poder aplicar el fondo difuso */
-  height: 100%;
-  padding: 20px;
-  color: white; /* Color del texto */
-  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
-  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
-  margin: 5px;
-
-  /* Fondo rojo con efecto de difuminado */
-  background: radial-gradient(
-    circle,
-    rgba(101, 121, 194, 0.5) 10%,
-    rgba(250, 241, 241, 0) 100%
-  ); /* Gradiente de rojo a transparente */
-
-  /* Aplicamos el desenfoque */
-  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
-  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
-}
-
-/* Cuerpo de la tarjeta (donde estará el contenido) */
-.card_body_instagram {
-  position: relative; /* Necesario para poder aplicar el fondo difuso */
-  height: 100%;
-  padding: 20px;
-  color: white; /* Color del texto */
-  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
-  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
-  margin: 5px;
-
-  /* Fondo rojo con efecto de difuminado */
-  background: radial-gradient(
-    circle,
-    rgba(255, 28, 116, 0.5) 10%,
-    rgba(250, 241, 241, 0) 100%
-  ); /* Gradiente de rojo a transparente */
-
-  /* Aplicamos el desenfoque */
-  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
-  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
-}
-
-/* Cuerpo de la tarjeta (donde estará el contenido) */
-.card_body_tiktok {
-  position: relative; /* Necesario para poder aplicar el fondo difuso */
-  height: 100%;
-  padding: 20px;
-  color: white; /* Color del texto */
-  border-radius: 15px; /* Hacer que las esquinas del contenido sean más suaves */
-  z-index: 1; /* Asegura que el contenido esté encima del fondo difuso */
-  margin: 5px;
-
-  /* Fondo rojo con efecto de difuminado */
-  background: radial-gradient(
-    circle,
-    rgba(8, 255, 249, 0.5) 10%,
-    rgba(250, 241, 241, 0) 100%
-  ); /* Gradiente de rojo a transparente */
-
-  /* Aplicamos el desenfoque */
-  backdrop-filter: blur(1px); /* Aplica un blur a todo el fondo */
-  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con Safari */
-}
-
-/* Pseudo-elemento para el efecto de las esquinas oscuras */
-.border_card_social_media::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.7) 30%,
-    transparent 70%
-  ); /* Efecto de oscurecer las esquinas */
-  z-index: 0; /* Coloca el fondo oscuro detrás del contenido */
-  filter: blur(10px); /* Aplica un desenfoque para el fondo */
-  pointer-events: none; /* Asegura que el contenido sea accesible y no se vea afectado por el pseudo-elemento */
-}
-
-.difuminar_card {
-  position: absolute;
-  width: 110%;
-  height: 100px;
-  background: linear-gradient(to bottom, rgba(180, 22, 22, 0) 0%, #101214 50%);
-  bottom: -50px;
-  left: -12px;
-  z-index: 300;
-  border-radius: 15px;
-}
-
-.container_title_card {
-  display: flex;
-  justify-content: left;
-  align-items: start;
-}
-
-.container_logo_card {
-  width: 65px;
-}
-
-.container_logo_card img {
-  width: 100%;
-}
-
-.btn_suscripcion {
-  width: 240px;
-  height: 60px;
-  background: #c3302b;
-  color: #fff;
-  position: absolute;
-  z-index: 500;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 60px;
-  bottom: -30px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.btn_suscripcion_discord {
-  width: 240px;
-  height: 60px;
-  background: #7289da;
-  color: #fff;
-  position: absolute;
-  z-index: 500;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 60px;
-  bottom: -30px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.btn_suscripcion_instagram {
-  width: 240px;
-  height: 60px;
-  background: #ff1c74;
-  color: #fff;
-  position: absolute;
-  z-index: 500;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 60px;
-  bottom: -30px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.btn_suscripcion_tiktok {
-  width: 240px;
-  height: 60px;
-  background: #08fff9;
-  color: #2a2929;
-  position: absolute;
-  z-index: 500;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 60px;
-  bottom: -30px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #fff;
 }

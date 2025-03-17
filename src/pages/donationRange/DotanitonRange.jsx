@@ -6,7 +6,8 @@ import start from "../../assets/start.png"
 import flash from "../../assets/flash.png"
 import AOS from "aos"
 import { useEffect } from "react"
-export const DotanitonRange = () => {
+
+export function DotanitonRange() {
 
 
     useEffect(() => {
@@ -16,7 +17,7 @@ export const DotanitonRange = () => {
     }, [])
     return (
         <div className="container_principal_peds">
-            <h1 data-aos="fade-up" style={{ color: "#fff", textAlign: "center", paddingTop: 80 }}>Rango de donación</h1>
+
             <div data-aos="fade-up" className="container_peds">
                 <div className="card_peds">
                     <div className="container_logo_peds">

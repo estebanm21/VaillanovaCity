@@ -5,13 +5,17 @@ import Home from "../pages/home/Home"
 import BandsRegulations from "../pages/bands-regulations/BandsRegulations"
 import HowToDonate from "../pages/howToDonate/HowToDonate"
 import { Peds } from "../pages/PEDS/Peds"
-import { DotanitonRange } from "../pages/donationRange/DotanitonRange"
+import Houses from "../pages/houses/Houses"
+
 // import Cars from "../pages/cars/Cars"
-import Vehicles from "../pages/vehicles/vehicles"
+import Vehicles from "../pages/vehicles/Vehicles"
 import { Jets } from "../pages/jets/Jets"
 
-import { Coches } from "../pages/coches/Coches"
+import { Cars } from "../pages/cars/Cars"
 import { Barcos } from "../pages/boats/Barcos"
+import Map from "../pages/map/Map"
+
+
 
 
 export const Router = () => {
@@ -26,11 +30,12 @@ export const Router = () => {
                     <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
                     <Route path="vehiculos-vips" element={<Vehicles />}></Route>
-                    <Route path="rango-de-donacion" element={<DotanitonRange />}></Route>
+                    {/* <Route path="rango-de-donacion" element={<DotanitonRange />}></Route> */}
                     <Route path="jets" element={<Jets />}></Route>
                     <Route path="barcos" element={<Barcos />}></Route>
-                    <Route path="coches" element={<Coches />}></Route>
-
+                    <Route path="coches" element={<Cars />}></Route>
+                    <Route path="casas-premium" element={<Houses />}></Route>
+                    <Route path="mapa_y_locales" element={<Map />}></Route>
 
 
                     <Route path='*' element={<Navigate to={"/inicio"} />} />

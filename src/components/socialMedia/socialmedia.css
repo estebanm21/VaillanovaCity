@@ -1,0 +1,70 @@
+.container_socialmedia {
+  margin-top: 50px;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  /* background: #101214; */
+  /* padding: 0px 50px; */
+  background-image: url("../../assets/background_social_media.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container_cards_redes {
+  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+  gap: 30px;
+}
+
+.container_man_redes {
+  width: 400px;
+}
+
+.container_man_redes img {
+  width: 100%;
+}
+
+.card_discord {
+  width: 300px;
+  height: 250px;
+  background-image: url("../../assets/card_discord.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card_instagam {
+  width: 300px;
+  height: 250px;
+  background-image: url("../../assets/card_instagram.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card_youtube {
+  width: 300px;
+  height: 250px;
+  background-image: url("../../assets/card_youtube.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card_tiktok {
+  width: 300px;
+  height: 250px;
+  background-image: url("../../assets/card_tiktok.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

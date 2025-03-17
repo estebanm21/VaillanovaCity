@@ -3,14 +3,14 @@
   height: auto;
   text-align: center;
   padding-top: 50px;
+  position: relative;
 }
 .container_peds_cards {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: start;
-  /* background: red; */
   height: auto;
   flex-wrap: wrap;
   padding: 50px 20px;
@@ -128,4 +128,48 @@
   outline: none;
   border-color: #7289da;
   box-shadow: 0 0 0 4px rgba(46, 66, 255, 0.3);
+}
+
+.card_ped {
+  width: 350px;
+}
+
+.card_ped img {
+  width: 100%;
+}
+
+.container_women_peds {
+  width: 250px;
+  position: absolute;
+  top: 15px;
+  right: 110px;
+  z-index: -2;
+}
+
+.container_women_peds img {
+  width: 100%;
+}
+
+@media (max-width: 1060px) {
+  .container_women_peds {
+    width: 190px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 830px) {
+  .container_peds_cards {
+    margin-top: 100px;
+  }
+
+  .container_women_peds {
+    top: 140px;
+  }
+}
+
+@media (max-width: 367px) {
+  .container_women_peds {
+    top: 190px;
+    right: 80px;
+  }
 }

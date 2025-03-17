@@ -3,21 +3,25 @@ import "./home.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import LogoDiscord from "../../components/LogoDiscord"
-import LogoFiveM from "../../components/LogoFiveM"
-import imgPrincipal from "../../assets/img_principal.png"
-import Parallax from "../../components/Parallax";
+
+import imgPrincipal from "../../assets/FotoWebHome.png"
+
 
 import imgWhiteList from "../../assets/white_list.png"
 import imgVelocidad from "../../assets/velocidad.png"
 import imgBandas from "../../assets/bandas.png"
 import imgOptimizacion from "../../assets/optimizacion.png"
-import ParallaxFeatures from "../../components/Smoke/ParallasFeatures";
-import logoYoutube from "../../assets/Youtube.png"
-import logoDiscord_ from "../../assets/Discord.png"
-import logoInstagram from "../../assets/Instagram.png"
-import logoTikTok from "../../assets/TikTok.png"
+
 import win from "../../assets/win.png"
+import imgRol from "../../assets/rol_img.png"
+import autoRol from "../../assets/auto_rol.png"
+import romboImg from "../../assets/rombo.png"
+import imgWork1 from "../../assets/imgwork1.png"
+import manFeatures from "../../assets/man_features.png"
+
+import SocialMedia from "../../components/socialMedia/SocialMedia"
+
+import imgWork2 from "../../assets/imgwork2.png"
 
 
 
@@ -68,13 +72,8 @@ export default function Home() {
                             <div className="kode-text">Descubre Vilanova City</div> {/* Aquí puedes personalizar el texto */}
                         </div>
 
-                        <h2 data-aos="fade-up" data-aos-duration="1000" className="title">El mejor servidor de <span style={{ color: "#BB33FF" }}>Roleplay en GTA V</span></h2>
-                        <p data-aos="fade-up" data-aos-duration="1000" className="text_home">Experimenta un mundo único en FiveM, diseñado para hispanohablantes como tú.
-
-                            En VilanovaCity, la ciudad está llena de oportunidades y aventuras que esperan por ti.
-                            Sé parte de una comunidad vibrante donde tus decisiones definen tu camino.
-
-                            Crea tu propia historia, vive momentos emocionantes, y sumérgete en una experiencia inolvidable que nunca deja de sorprenderte.</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" className="title">El mejor servidor de Roleplay en GTA V</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" className="text_home">Experimenta un mundo único en FiveM, diseñado para hispanohablantes como tú. En VilanovaCity, la ciudad está llena de oportunidades y aventuras que esperan por ti. Sé parte de una comunidad vibrante donde tus decisiones definen tu camino.</p>
 
                     </div>
 
@@ -126,6 +125,31 @@ export default function Home() {
                     <a href="#" class="btn btn_jugar_home"><LogoFiveM /></a>
                 </div> */}
 
+                    <div className="btn_players">
+                        <div className="container_btn_active">
+                            <div className="btn_active">
+
+                            </div>
+                        </div>
+                        <div><h4>3230+</h4></div>
+                        <div className="separator"></div>
+                        <h6>JUGADORES ACTIVOS</h6>
+                    </div>
+
+                    <div className="container_btns_servidor">
+
+                        <div className="btn_servidor">
+                            Únete al servidor
+                        </div>
+
+                        <div className="btn_descubre_mas">
+                            Descubre más
+                        </div>
+
+                    </div>
+
+
+
                 </div>
 
 
@@ -134,9 +158,32 @@ export default function Home() {
 
             </div >
 
+
+
+            <div className="container_principal_beneficios_home">
+                <div className="container_beneficios_home">
+
+                    <div className="container_rombo">
+                        <img src={romboImg} alt="" />
+                    </div>
+
+                    <div className="contariner_img_rol">
+                        <img src={imgRol} alt="" />
+                    </div>
+
+                    <div className="contariner_img_autoRol">
+                        <img src={autoRol} alt="" />
+                    </div>
+
+
+                </div>
+            </div>
+
             <div className="container_list_features">
 
-                <Parallax style={{ position: "absolute", lef: 0 }} />
+                <div className="container_man_features">
+                    <img src={manFeatures} alt="" />
+                </div>
 
                 <div className="container_info_list">
                     <div data-aos="fade-up" duration="1000" className="card_feature">
@@ -144,8 +191,9 @@ export default function Home() {
                             <div className="icon_title_card">
                                 <img src={imgWhiteList} alt="" />
                             </div>
-                            <h2>CON WHITELIST</h2>
+
                         </div>
+                        <h2>Con whitelist</h2>
                         <p>Nuestro servidor cuenta con whitelist, por lo que necesitarás ser aprobado para poder entrar.</p>
                     </div>
 
@@ -154,9 +202,10 @@ export default function Home() {
                             <div className="icon_title_card">
                                 <img src={imgBandas} alt="" />
                             </div>
-                            <h2>BANDAS GRATIS</h2>
+
 
                         </div>
+                        <h2>Bandas gratis</h2>
                         <p>En nuestro servidor puedes crear una banda totalmente gratis</p>
                     </div>
                     <div data-aos="fade-up" duration="1000" className="card_feature">
@@ -165,8 +214,9 @@ export default function Home() {
                                 <img src={imgVelocidad} alt="" />
                             </div>
 
-                            <h2>VELOCIDADES MODERADAS</h2>
+
                         </div>
+                        <h2>Velocidades moderadas</h2>
                         <p>Los vehículos tienen velocidades moderadas para una
                             experiencia más auténtica.</p>
                     </div>
@@ -176,8 +226,9 @@ export default function Home() {
                             <div className="icon_title_card">
                                 <img src={imgOptimizacion} alt="" />
                             </div>
-                            <h2>OPTIMIZADO AL MÁXIMO</h2>
+
                         </div>
+                        <h2>Optimizado al maximo</h2>
                         <p>Disfruta de un servidor optimizado con FPS estables en
                             todo momento.</p>
                     </div>
@@ -187,9 +238,10 @@ export default function Home() {
                             <div className="icon_title_card">
                                 <img src={win} alt="" />
                             </div>
-                            <h2>SIN PAY-TO-WIN
-                            </h2>
+
                         </div>
+                        <h2>Sin pay to win
+                        </h2>
                         <p>En nuestro servidor no necesitas pagar para progresar.</p>
                     </div>
                 </div>
@@ -197,115 +249,25 @@ export default function Home() {
             </div>
 
 
-            <div className="container_socialmedia">
-                <ParallaxFeatures />
-                <h1 data-aos="fade-right" style={{ textAlign: "center", color: "#fff", marginTop: 50, marginBottom: 50 }}>Únete a nuestra comunidad</h1>
-
-                <div className="container_cards_socialmedia">
-
-                    <div data-aos="flip-down" className="border_card_social_media_discord">
-                        <div className="card_body_discord">
-
-                            <div className="container_title_card">
-
-                                <div className="container_logo_card">
-                                    <img src={logoDiscord_} alt="" />
-                                </div>
-
-                                <div style={{ display: "flex", flexDirection: "column", justifyContent: "right", marginLeft: 20 }}>
-                                    <h5 style={{ color: "#94a8ae" }}>Canal oficial</h5>
-                                    <h5 style={{ color: "#e5ffff" }}>DISCORD</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="difuminar_card"></div>
-                        <a href="#" className="btn_suscripcion_discord">
-                            <h4>Ingresar</h4>
-                        </a>
-                    </div>
-
-
-
-                    <div data-aos="flip-down" className="border_card_social_media">
-                        <div className="card_body">
-
-                            <div className="container_title_card">
-
-                                <div className="container_logo_card">
-                                    <img src={logoYoutube} alt="" />
-                                </div>
-
-                                <div style={{ display: "flex", flexDirection: "column", justifyContent: "right", marginLeft: 20 }}>
-                                    <h5 style={{ color: "#94a8ae" }}>Canal oficial</h5>
-                                    <h5 style={{ color: "#e5ffff" }}>YOUTUBE</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="difuminar_card"></div>
-                        <a href="#" className="btn_suscripcion">
-                            <h4>Suscribirse</h4>
-                        </a>
-                    </div>
-
-
-
-                    <div data-aos="flip-down" className="border_card_social_media_instagram">
-                        <div className="card_body_instagram">
-
-                            <div className="container_title_card">
-
-                                <div className="container_logo_card">
-                                    <img src={logoInstagram} alt="" />
-                                </div>
-
-                                <div style={{ display: "flex", flexDirection: "column", justifyContent: "right", marginLeft: 20 }}>
-                                    <h5 style={{ color: "#94a8ae" }}>Instagram oficial</h5>
-                                    <h5 style={{ color: "#e5ffff" }}>INSTAGRAM</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="difuminar_card"></div>
-                        <a href="#" className="btn_suscripcion_instagram">
-                            <h4>Suscribirse</h4>
-                        </a>
-                    </div>
-
-
-
-
-                    <div data-aos="flip-down" className="border_card_social_media_tiktok">
-                        <div className="card_body_tiktok">
-
-                            <div className="container_title_card">
-
-                                <div className="container_logo_card">
-                                    <img src={logoTikTok} alt="" />
-                                </div>
-
-                                <div style={{ display: "flex", flexDirection: "column", justifyContent: "right", marginLeft: 20 }}>
-                                    <h5 style={{ color: "#94a8ae" }}>TikTok oficial</h5>
-                                    <h5 style={{ color: "#e5ffff" }}>TIKTOK</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="difuminar_card"></div>
-                        <a href="#" className="btn_suscripcion_tiktok">
-                            <h4>Suscribirse</h4>
-                        </a>
-                    </div>
-
-
-
-
-
-
+            <div className="container_work">
+                <div className="containet_list_works">
 
                 </div>
+
+                <div className="container_imgs_work">
+                    <div className="container_img_work">
+                        <img src={imgWork1} alt="" />
+                    </div>
+                    <div className="container_img_work">
+                        <img src={imgWork2} alt="" />
+                    </div>
+                </div>
             </div>
+
+            <SocialMedia />
+
+
+
 
         </>
 

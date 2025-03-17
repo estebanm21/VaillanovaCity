@@ -1,0 +1,179 @@
+.container_principal_mapa_y_locales {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-image: url("../../assets/background_mapas.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container_title_mapa_y_locales {
+  width: 100%;
+  padding: 50px 10px 10px 10px;
+  text-align: center;
+}
+
+.container_title_mapa_y_locales h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.container_text_mapa_locales {
+  max-width: 700px;
+  width: 100%;
+  /* background: red; */
+  margin: auto;
+  padding: 10px;
+}
+
+.container_text_mapa_locales p {
+  text-align: center;
+  color: #fff;
+}
+
+.buton_ver_locales {
+  width: 130px;
+  height: 35px;
+  background: #305ee3;
+  border-radius: 5px;
+  margin: auto;
+  padding: 4px;
+  text-align: center;
+}
+
+.buton_ver_locales p {
+  color: #fff;
+}
+
+.container_img_mapa {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+}
+
+.container_img_mapa img {
+  width: 100%;
+}
+
+.btn_card_local {
+  width: 100%;
+  background: #305ee3;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.container_img_card_local {
+  width: 100%;
+  padding: 10px;
+}
+
+.container_img_card_local img {
+  width: 100%;
+}
+
+/* Estilos para el Modal Grande */
+.modal-grande {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #171717;
+  color: #fff;
+  width: 80%;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #202e5f;
+  padding-bottom: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-body {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.modal-img {
+  width: 310px;
+}
+
+.modal-img img {
+  width: 100%;
+}
+
+.modal-info p {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-obtener-local {
+  padding: 10px 20px;
+  background-color: #305ee3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-obtener-local:hover {
+  background-color: #506cc0;
+}
+
+.container_woman_modal {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  z-index: -1;
+  /* background: red; */
+}
+
+.container_woman_modal img {
+  width: 100%;
+  mask-image: linear-gradient(#000 80%, transparent);
+}
+.container_modal_and_image {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  padding: 20px;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  .container_woman_modal {
+    width: 100px;
+    top: 10px;
+    left: 40px;
+  }
+}
