@@ -6,7 +6,7 @@ import barcoImg from "../../assets/barco_card.png"
 import AvionImg from "../../assets/avion_card.png"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
 
-export default function Vehicles() {
+export const Vehicles = () => {
 
 
 

@@ -8,7 +8,7 @@ import { Peds } from "../pages/PEDS/Peds"
 import Houses from "../pages/houses/Houses"
 
 // import Cars from "../pages/cars/Cars"
-import Vehicles from "../pages/vehicles/Vehicles"
+import { Vehicles } from "../pages/vehicles/Vehicles"
 import { Jets } from "../pages/jets/Jets"
 
 import { Cars } from "../pages/cars/Cars"
