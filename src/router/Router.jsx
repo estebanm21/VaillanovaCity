@@ -15,7 +15,7 @@ import { Jets } from "../pages/jets/Jets"
 import { Cars } from "../pages/cars/Cars"
 import { Barcos } from "../pages/boats/Barcos"
 import Map from "../pages/map/Map"
-import { Vehicles } from "../pages/vehicles/Vehicles"
+// import { Vehicles } from "../pages/vehicles/Vehicles"
 
 // cambios
 
@@ -31,7 +31,7 @@ export const Router = () => {
                     <Route path="normativa-de-bandas" element={<BandsRegulations />}></Route>
                     <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
-                    <Route path="vehiculos-vips" element={<Vehicles />}></Route>
+                    {/* <Route path="vehiculos-vips" element={<Vehicles />}></Route> */}
                     {/* <Route path="rango-de-donacion" element={<DotanitonRange />}></Route> */}
                     <Route path="jets" element={<Jets />}></Route>
                     <Route path="barcos" element={<Barcos />}></Route>
