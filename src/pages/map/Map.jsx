@@ -5,6 +5,7 @@ import pin from "../../assets/pin_mapa.png";
 import Aos from "aos";
 import locaExample from "../../assets/local_example.png";
 import imgWomanModal from "../../assets/woman_modal.png"
+import manMapa from "../../assets/man_mapa.png"
 
 export default function Map() {
     // Información de los locales con coordenadas de los pines
@@ -88,6 +89,9 @@ export default function Map() {
 
     return (
         <div className="container_principal_mapa_y_locales">
+            <div className="container_map_mapa">
+                <img src={manMapa} alt="" />
+            </div>
             <div className="container_title_mapa_y_locales">
                 <h1>Mapa y locales</h1>
             </div>

@@ -5,6 +5,34 @@
   background-image: url("../../assets/background_mapas.svg");
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.container_map_mapa {
+  width: 180px;
+  position: absolute;
+  top: 200px;
+  right: 330px;
+}
+
+@media (max-width: 1040px) {
+  .container_map_mapa {
+    width: 120px;
+    top: 310px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container_map_mapa {
+    width: 120px;
+    top: 390px;
+    right: 160px;
+  }
+}
+
+.container_map_mapa img {
+  width: 100%;
 }
 
 .container_title_mapa_y_locales {
@@ -50,6 +78,8 @@
   width: 100%;
   margin: auto;
   padding: 15px;
+  /* background: red; */
+  margin-top: 130px;
 }
 
 .container_img_mapa img {
