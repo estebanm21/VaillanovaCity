@@ -23,6 +23,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia"
 
 import imgWork2 from "../../assets/imgwork2.png"
 
+import Footer from "../../components/footer/Footer"
 
 
 export default function Home() {
@@ -167,11 +168,11 @@ export default function Home() {
                         <img src={romboImg} alt="" />
                     </div>
 
-                    <div className="contariner_img_rol">
+                    <div data-aos="flip-left" className="contariner_img_rol">
                         <img src={imgRol} alt="" />
                     </div>
 
-                    <div className="contariner_img_autoRol">
+                    <div data-aos="flip-right" className="contariner_img_autoRol">
                         <img src={autoRol} alt="" />
                     </div>
 
@@ -249,12 +250,12 @@ export default function Home() {
             </div>
 
 
-            <div className="container_work">
+            <div data-aos="zoom-in" className="container_work">
                 <div className="containet_list_works">
 
                 </div>
 
-                <div className="container_imgs_work">
+                <div data-aos="zoom-in" className="container_imgs_work">
                     <div className="container_img_work">
                         <img src={imgWork1} alt="" />
                     </div>
@@ -267,6 +268,7 @@ export default function Home() {
             <SocialMedia />
 
 
+            <Footer />
 
 
         </>

@@ -9,8 +9,10 @@ import carPed4 from "../../assets/ped_4.png"
 import carPed5 from "../../assets/ped_5.png"
 import carPed6 from "../../assets/ped_6.png"
 import carPed7 from "../../assets/ped_7.png"
-import SocialMedia from "../../components/socialMedia/SocialMedia"
+
 import womenPeds from "../../assets/woman_peds.png"
+import SocialMedia from "../../components/socialMedia/SocialMedia"
+import Footer from "../../components/footer/Footer"
 
 export const Peds = () => {
 
@@ -80,7 +82,7 @@ export const Peds = () => {
             </div> */}
 
 
-
+            <Footer />
 
 
 

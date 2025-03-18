@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import borderTitle from "../../assets/border_title.png"
 import manGenralRegulations from "../../assets/man_general_regulations.png"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
+import Footer from "../../components/footer/Footer"
 export const GeneralRegulations = () => {
     useEffect(() => {
         AOS.init();
@@ -360,6 +361,8 @@ export const GeneralRegulations = () => {
 
             </div>
             <SocialMedia />
+            <Footer />
+
         </>
     );
 };

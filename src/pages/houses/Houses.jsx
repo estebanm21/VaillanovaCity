@@ -3,6 +3,7 @@ import "./houses.css"
 import { NavLink } from "react-router-dom"
 
 import manHouses from "../../assets/man_features.png"
+import AOS from "aos"
 
 import { useEffect, useState } from "react"
 import { getHouses } from "../../helpers/getHouses"
@@ -17,9 +18,13 @@ function Houses() {
     useEffect(() => {
         setHouses(getHouses())
     }, [])
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
     return (
         <>
-            <div className="container_principal_houses">
+            <div data-aos="fade-right" className="container_principal_houses">
 
 
                 <div className="container_title_houses_principal">

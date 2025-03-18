@@ -6,6 +6,8 @@ import Aos from "aos";
 import locaExample from "../../assets/local_example.png";
 import imgWomanModal from "../../assets/woman_modal.png"
 import manMapa from "../../assets/man_mapa.png"
+import Footer from "../../components/footer/Footer"
+import SocialMedia from "../../components/socialMedia/SocialMedia"
 
 export default function Map() {
     // Información de los locales con coordenadas de los pines
@@ -88,7 +90,7 @@ export default function Map() {
     }, []);
 
     return (
-        <div className="container_principal_mapa_y_locales">
+        <>        <div className="container_principal_mapa_y_locales">
             <div className="container_map_mapa">
                 <img src={manMapa} alt="" />
             </div>
@@ -142,12 +144,13 @@ export default function Map() {
                         className="info-local"
                         ref={modalRef}
                         style={{
-                            position: "absolute",
-                            top: `calc(${localSeleccionado.coordenadas.top} - 160px)`,
-                            left: `calc(${localSeleccionado.coordenadas.left} - 35px)`,
+                            position: "fixed", // Usamos fixed para posicionarlo con respecto a la ventana
+                            top: "50%", // Centrado verticalmente
+                            left: "50%", // Centrado horizontalmente
+                            transform: "translate(-50%, -50%)", // Desplazamos el modal para que esté perfectamente centrado
                             background: "#262626",
                             color: "white",
-                            padding: "10px",
+                            padding: "20px",
                             border: "3px solid #525252",
                             borderRadius: "8px",
                             width: "300px",
@@ -166,6 +169,7 @@ export default function Map() {
                         </div>
                     </div>
                 )}
+
 
                 {/* Modal Grande */}
                 {modalGrandeAbierto && localSeleccionado && (
@@ -199,5 +203,11 @@ export default function Map() {
                 )}
             </div>
         </div>
+
+            <SocialMedia />
+            <Footer />
+
+        </>
+
     );
 }

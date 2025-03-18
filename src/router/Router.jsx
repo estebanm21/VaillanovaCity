@@ -9,12 +9,15 @@ import Houses from "../pages/houses/Houses"
 
 
 
+
 import { Jets } from "../pages/jets/Jets"
 
 import { Cars } from "../pages/cars/Cars"
 import { Barcos } from "../pages/boats/Barcos"
 import Map from "../pages/map/Map"
 import Vehiculos from "../pages/vehiculos/Vehiculos"
+import PoliciaRegulations from "../pages/policia-regulations/PoliciaRegulations"
+import RegulationCruzVilanova from "../pages/regulation-villanova/RegulationCruzVillanova"
 // import { Vehicles } from "../pages/vehicles/Vehicles"
 
 // cambios
@@ -29,6 +32,12 @@ export const Router = () => {
                     <Route path="inicio" element={<Home />}></Route>
                     <Route path="normativa-general" element={<GeneralRegulations />}></Route>
                     <Route path="normativa-de-bandas" element={<BandsRegulations />}></Route>
+
+                    <Route path="normativa-de-policias-locales" element={<PoliciaRegulations />}></Route>
+
+                    <Route path="normativa-cruz-vilanova" element={<RegulationCruzVilanova />}></Route>
+
+
                     <Route path="peds-multicaracter" element={<Peds />}></Route>
                     <Route path="como-donar" element={<HowToDonate />}></Route>
                     <Route path="vehiculos-vips" element={<Vehiculos />}></Route>

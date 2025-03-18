@@ -55,8 +55,8 @@ export default function Navbar() {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li> <NavLink to="/normativa-general" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa General</NavLink></li>
-                    <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa Policia Local</a></li>
-                    <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa Cruz Vilanova</a></li>
+                    <li><NavLink to="/normativa-de-policias-locales" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa policia local</NavLink></li>
+                    <li><NavLink to="/normativa-cruz-vilanova" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa Cruz Vilanova</NavLink></li>
                     <li> <NavLink to="/normativa-de-bandas" className="dropdown-item"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa de Bandas</NavLink></li>
                     {/* <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Conceptos básicos</a></li> */}
                     <li><a className="dropdown-item" href="#"><box-icon color="#a1a4a8" type='solid' name='chevron-right'></box-icon>Normativa de Locales</a></li>

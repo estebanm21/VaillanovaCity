@@ -5,14 +5,20 @@ import carImg from "../../assets/car_card.png"
 import barcoImg from "../../assets/barco_card.png"
 import AvionImg from "../../assets/avion_card.png"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
-
+import Footer from "../../components/footer/Footer"
+import AOS from "aos"
+import { useEffect } from "react"
 export default function Vehiculos() {
 
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
 
 
     return <>
 
-        <div className="container_principal_vehicles">
+        <div data-aos="fade-right" className="container_principal_vehicles">
 
 
             <div className="container_title_vehicles_principal">
@@ -101,7 +107,7 @@ export default function Vehiculos() {
 
         <SocialMedia />
 
-
+        <Footer />
     </>
 }
 

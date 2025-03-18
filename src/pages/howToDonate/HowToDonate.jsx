@@ -7,7 +7,7 @@ import bizum from "../../assets/bizum.png"
 import cripto from "../../assets/cripto.png"
 import revolut from "../../assets/revolut.png"
 import paysafecard from "../../assets/paysafecard.png"
-
+import Footer from "../../components/footer/Footer"
 import mondeda from "../../assets/moneda.png"
 
 import borderTitle from "../../assets/border_title.png"
@@ -201,7 +201,7 @@ export default function HowToDonate() {
             </div>
 
             <SocialMedia />
-
+            <Footer />
 
         </>
     )
