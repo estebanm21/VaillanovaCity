@@ -8,6 +8,8 @@ import AOS from "aos"
 import { useEffect, useState } from "react"
 import { getHouses } from "../../helpers/getHouses"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
+import Footer from "../../components/footer/Footer"
+
 
 
 
@@ -89,7 +91,7 @@ function Houses() {
 
             <SocialMedia />
 
-
+            <Footer />
 
 
 
