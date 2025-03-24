@@ -8,6 +8,7 @@ import Footer from "../../components/footer/Footer"
 
 import { useEffect, useState } from "react"
 import { getCars } from "../../helpers/getVehicles"
+import AOS from "aos"
 
 export function Cars() {
 
@@ -18,13 +19,19 @@ export function Cars() {
     }, [])
 
 
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
+
+
 
 
 
 
     return (
         <>
-            <div className="container_principal_cars">
+            <div data-aos="fade-right" className="container_principal_cars">
 
                 <div className="container_title_cars_disponibles">
                     <h1 style={{ textAlign: "center" }}>Carros disponibles</h1>
