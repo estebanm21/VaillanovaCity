@@ -24,11 +24,6 @@ export function Cars() {
     }, [])
 
 
-
-
-
-
-
     return (
         <>
             <div data-aos="fade-right" className="container_principal_cars">
