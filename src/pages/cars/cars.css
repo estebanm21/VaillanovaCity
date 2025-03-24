@@ -121,3 +121,28 @@
 .container_border_title_cars_disponibles img {
   width: 100%;
 }
+
+.arrow-btn {
+  background-color: rgba(20, 118, 216, 0.9);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-nav-arrows {
+  /* background: blue; */
+  width: 340px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
