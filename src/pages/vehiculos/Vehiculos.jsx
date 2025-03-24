@@ -1,7 +1,7 @@
 import "./vehicles.css"
 
 import { NavLink } from "react-router-dom"
-import carImg from "../../assets/car_card.png"
+
 import barcoImg from "../../assets/barco_card.png"
 import AvionImg from "../../assets/avion_card.png"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
@@ -35,7 +35,7 @@ export default function Vehiculos() {
 
                 <div className="card_vehicles">
                     <div className="conatainer_img_card_vehicle">
-                        <img src={carImg} alt="" />
+                        {/* <img src={carImg} alt="" /> */}
                     </div>
 
                     <div className="container_title_car_vehicle">

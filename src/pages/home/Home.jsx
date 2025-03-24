@@ -26,11 +26,13 @@ import imgWork2 from "../../assets/imgwork2.png"
 import Footer from "../../components/footer/Footer"
 
 
+
 export default function Home() {
 
     useEffect(() => {
         AOS.init();
     }, [])
+
 
     return (
         <>

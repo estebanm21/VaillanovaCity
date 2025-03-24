@@ -6,6 +6,7 @@ import BandsRegulations from "../pages/bands-regulations/BandsRegulations"
 import HowToDonate from "../pages/howToDonate/HowToDonate"
 import { Peds } from "../pages/PEDS/Peds"
 import Houses from "../pages/houses/Houses"
+import DetailCar from "../pages/detailCar/DetailCar"
 
 
 
@@ -45,6 +46,7 @@ export const Router = () => {
                     <Route path="jets" element={<Jets />}></Route>
                     <Route path="barcos" element={<Barcos />}></Route>
                     <Route path="coches" element={<Cars />}></Route>
+                    <Route path="cocheDetail/:id" element={<DetailCar />}></Route>
                     <Route path="casas-premium" element={<Houses />}></Route>
                     <Route path="mapa_y_locales" element={<Map />}></Route>
 

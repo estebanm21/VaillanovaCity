@@ -2,7 +2,7 @@ import "./cars.css"
 
 import borderTitle from "../../assets/border_title.png"
 import { NavLink } from "react-router-dom"
-import carImg from "../../assets/car_card.png"
+
 import SocialMedia from "../../components/socialMedia/SocialMedia"
 import Footer from "../../components/footer/Footer"
 
@@ -44,28 +44,28 @@ export function Cars() {
 
                             <div key={car.id} className="card_car">
                                 <div className="conatainer_img_card_vehicle">
-                                    <img src={car.imgUrl} alt="" />
+                                    <img src={car.imgUrl_1} alt="" />
                                 </div>
 
                                 <div className="container_title_car_vehicle">
-                                    <h3>{car.title}</h3>
+                                    <h3>{car.tilte}</h3>
                                 </div>
 
                                 <div className="container_price_card">
                                     <h4> Price: {car.price} $</h4>
                                 </div>
 
-                                <div className="container_Maximum_speed">
+                                {/* <div className="container_Maximum_speed">
                                     <p>Maximum Speed: <span> {car.maximunSpeed} mph</span></p>
-                                </div>
+                                </div> */}
 
-                                <div className="container_text_car_vehicle">
+                                {/* <div className="container_text_car_vehicle">
                                     <p>{car.description}</p>
-                                </div>
+                                </div> */}
 
-                                <NavLink className="btn_card_car" to="/coches">
+                                <NavLink className="btn_card_car" to={`/cocheDetail/${car.id}`}>
 
-                                    <p>Obtener</p>
+                                    <p>Ver coche</p>
 
                                 </NavLink>
                             </div>
