@@ -43,7 +43,7 @@ function DetailCar() {
                 </div>
 
                 <div className="car-details">
-                    <h2 className="car-title">{car.title}</h2>
+                    <h2 className="car-title">{car.tilte}</h2>
                     <p className="car-description">{car.description}</p>
                     <p className="car-price">{car.price}</p>
                     <div className="text-start">
