@@ -54,7 +54,7 @@ export function Cars() {
                                 </div>
 
                                 <div className="container_price_card">
-                                    <h4> Price: {car.price} $</h4>
+                                    <h4> Price: {car.price}</h4>
                                 </div>
 
                                 {/* <div className="container_Maximum_speed">
