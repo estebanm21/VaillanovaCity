@@ -214,7 +214,7 @@ import { Cars } from "../pages/cars/Cars";
 const cars = [
   {
     id: 1,
-    tilte: "N1",
+    tilte: "Merzedez G63 AMK",
     price: "8,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg1,
@@ -229,7 +229,7 @@ const cars = [
   },
   {
     id: 2,
-    tilte: "N2",
+    tilte: "Merzedez G-Bravuz",
     price: "7,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg2,
@@ -243,7 +243,7 @@ const cars = [
   },
   {
     id: 4,
-    tilte: "N4",
+    tilte: "Lamburghini Hurakán",
     price: "9,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg4,
@@ -257,7 +257,7 @@ const cars = [
   },
   {
     id: 5,
-    tilte: "N5",
+    tilte: "Bugvatti Chyron",
     price: "14,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg5,
@@ -271,7 +271,7 @@ const cars = [
   },
   {
     id: 6,
-    tilte: "N6",
+    tilte: "BMM M5 F9X",
     price: "6,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg6,
@@ -285,7 +285,7 @@ const cars = [
   },
   {
     id: 7,
-    tilte: "N7",
+    tilte: "Merzedez A45 AMQ",
     price: "4,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg7,
@@ -299,7 +299,7 @@ const cars = [
   },
   {
     id: 8,
-    tilte: "N8",
+    tilte: "Königsegg Regira",
     price: "11,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg8,
@@ -313,7 +313,7 @@ const cars = [
   },
   {
     id: 9,
-    tilte: "N9",
+    tilte: "Merzedez AM-One",
     price: "13,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg9,
@@ -327,7 +327,7 @@ const cars = [
   },
   {
     id: 10,
-    tilte: "N10",
+    tilte: "BMM M8 Kompetition",
     price: "5,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg10,
@@ -339,37 +339,37 @@ const cars = [
     description:
       "Un sedán con alma de deportivo. Diseño agresivo, potencia bruta y un estilo que impone. Perfecto para quienes buscan velocidad sin perder elegancia.",
   },
-  // {
-  //   id: 11,
-  //   tilte: "N11",
-  //   price: "13,99€",
-  //   maximunSpeed: "116.4",
-  //   imgUrl_1: carImg11,
-  //   imgUrl_2: carImg11_2,
-  //   imgUrl_3: carImg11_3,
-  //   imgUrl_4: carImg11_4,
-  //   imgUrl_5: carImg11_5,
-  //   imgUrl_6: carImg11_6,
-  //   description:
-  //     "The Kurtz 31 Patrol Boat is a 4 seater vehicle in the 'Boats' class available in Grand Theft Auto Online on PC, PlayStation 4, PlayStation 5, Xbox One and Xbox Series X|S.",
-  // },
-  // {
-  //   id: 12,
-  //   tilte: "N12",
-  //   price: "12,99€",
-  //   maximunSpeed: "116.4",
-  //   imgUrl_1: carImg12,
-  //   imgUrl_2: carImg12_2,
-  //   imgUrl_3: carImg12_3,
-  //   imgUrl_4: carImg12_4,
-  //   imgUrl_5: carImg12_5,
-  //   imgUrl_6: carImg12_6,
-  //   description:
-  //     "The Kurtz 31 Patrol Boat is a 4 seater vehicle in the 'Boats' class available in Grand Theft Auto Online on PC, PlayStation 4, PlayStation 5, Xbox One and Xbox Series X|S.",
-  // },
+  {
+    id: 11,
+    tilte: "Bugvatti Zairon SSX",
+    price: "19,99€",
+    maximunSpeed: "116.4",
+    imgUrl_1: carImg11,
+    imgUrl_2: carImg11_2,
+    imgUrl_3: carImg11_3,
+    imgUrl_4: carImg11_4,
+    imgUrl_5: carImg11_5,
+    imgUrl_6: carImg11_6,
+    description:
+      "Diseño extremo y tecnología al límite. Un superdeportivo único, pensado para quienes viven a máxima velocidad sin dejar de lado la elegancia. Ideal para dominar tanto la autopista como el paseo marítimo de VilanovaCity.",
+  },
+  {
+    id: 12,
+    tilte: "Bugvatti Zairon XCR",
+    price: "19,99€",
+    maximunSpeed: "116.4",
+    imgUrl_1: carImg12,
+    imgUrl_2: carImg12_2,
+    imgUrl_3: carImg12_3,
+    imgUrl_4: carImg12_4,
+    imgUrl_5: carImg12_5,
+    imgUrl_6: carImg12_6,
+    description:
+      "Fuerza bruta envuelta en fibra de carbono. El Zyron XCR es sinónimo de velocidad extrema y diseño radical. Creado para destacar en las calles de VilanovaCity y dejar huella con solo pisar el acelerador.",
+  },
   {
     id: 13,
-    tilte: "N13",
+    tilte: "Ferrady 812 Kompetezzion",
     price: "13,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg13,
@@ -383,7 +383,7 @@ const cars = [
   },
   {
     id: 14,
-    tilte: "N14",
+    tilte: "Porscha 911 GT3 RX",
     price: "12,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg14,
@@ -398,7 +398,7 @@ const cars = [
 
   {
     id: 15,
-    tilte: "N15",
+    tilte: "Lamburgheni Hurakán ST0",
     price: "13,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg15,
@@ -412,7 +412,7 @@ const cars = [
   },
   {
     id: 16,
-    tilte: "N16",
+    tilte: "Lamburgheni Urux",
     price: "9,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg16,
@@ -426,7 +426,7 @@ const cars = [
   },
   {
     id: 17,
-    tilte: "N17",
+    tilte: "Porscha Panemira",
     price: "8,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg17,
@@ -440,7 +440,7 @@ const cars = [
   },
   {
     id: 18,
-    tilte: "N18",
+    tilte: "Lamborgnini Xian",
     price: "19,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg18,
@@ -454,7 +454,7 @@ const cars = [
   },
   {
     id: 19,
-    tilte: "N19",
+    tilte: "Buggati Shyron",
     price: "24,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg19,
@@ -468,7 +468,7 @@ const cars = [
   },
   {
     id: 20,
-    tilte: "N20",
+    tilte: "Bentlye Contynental",
     price: "5,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg20,
@@ -482,7 +482,7 @@ const cars = [
   },
   {
     id: 21,
-    tilte: "N21",
+    tilte: "BMM X5-R",
     price: "9,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg21,
@@ -496,7 +496,7 @@ const cars = [
   },
   {
     id: 22,
-    tilte: "N22",
+    tilte: "Mercedex S63-R",
     price: "7,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg22,
@@ -511,7 +511,7 @@ const cars = [
 
   {
     id: 23,
-    tilte: "N23",
+    tilte: "Audy RS-7X",
     price: "8,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg23,
@@ -526,7 +526,7 @@ const cars = [
 
   {
     id: 24,
-    tilte: "N24",
+    tilte: "Audy R5-C",
     price: "11,99€ ",
     maximunSpeed: "116.4",
     imgUrl_1: carImg24,
@@ -540,7 +540,7 @@ const cars = [
   },
   {
     id: 25,
-    tilte: "N25",
+    tilte: "MaClaren Senha",
     price: "19,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg25,
@@ -554,7 +554,7 @@ const cars = [
   },
   {
     id: 26,
-    tilte: "N26",
+    tilte: "Tesl4 Modal Pled",
     price: "4,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg26,
@@ -568,7 +568,7 @@ const cars = [
   },
   {
     id: 29,
-    tilte: "N29",
+    tilte: "Farr4ri 812 Suprafast",
     price: "14,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg29,
@@ -582,7 +582,7 @@ const cars = [
   },
   {
     id: 30,
-    tilte: "N30",
+    tilte: "Merzedez GLX63 AM-G",
     price: "9,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg30,
@@ -596,7 +596,7 @@ const cars = [
   },
   {
     id: 41,
-    tilte: "N41",
+    tilte: "Merzedez GT 6T",
     price: "11,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg41,
@@ -611,7 +611,7 @@ const cars = [
 
   {
     id: 43,
-    tilte: "N43",
+    tilte: "Rulls-Raice Fantom",
     price: "17,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg43,
@@ -626,7 +626,7 @@ const cars = [
 
   {
     id: 45,
-    tilte: "N45",
+    tilte: "Auri RZ5 Strika",
     price: "13,99€",
     maximunSpeed: "116.4",
     imgUrl_1: carImg45,

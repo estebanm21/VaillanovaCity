@@ -19,6 +19,7 @@ import Map from "../pages/map/Map"
 import Vehiculos from "../pages/vehiculos/Vehiculos"
 import PoliciaRegulations from "../pages/policia-regulations/PoliciaRegulations"
 import RegulationCruzVilanova from "../pages/regulation-villanova/RegulationCruzVillanova"
+import DetailBoat from "../pages/detailBoat/DetailBoat"
 // import { Vehicles } from "../pages/vehicles/Vehicles"
 
 // cambios
@@ -47,6 +48,8 @@ export const Router = () => {
                     <Route path="barcos" element={<Barcos />}></Route>
                     <Route path="coches" element={<Cars />}></Route>
                     <Route path="cocheDetail/:id" element={<DetailCar />}></Route>
+                    <Route path="boteDetail/:id" element={<DetailBoat />}></Route>
+
                     <Route path="casas-premium" element={<Houses />}></Route>
                     <Route path="mapa_y_locales" element={<Map />}></Route>
 

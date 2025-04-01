@@ -46,8 +46,8 @@ export default function Vehiculos() {
                         <p> Estos vehículos están diseñados para la velocidad y el rendimiento. Suelen tener motores potentes, diseños aerodinámicos y una conducción ágil. Son ideales para carreras y persecuciones a alta velocidad.</p>
                     </div>
 
-                    <NavLink to="/coches">
-                        <div className="btn_card_vehicles">
+                    <NavLink className="btn_card_vehicles" to="/coches">
+                        <div >
                             <p>Ver catalogo</p>
                         </div>
                     </NavLink>
@@ -70,9 +70,11 @@ export default function Vehiculos() {
                         <p> Estos barcos están diseñados para el ocio y la diversión. Suelen tener diseños elegantes, interiores lujosos y una gran velocidad. Son perfectos para navegar por las aguas de GTA V, participar en actividades acuáticas y disfrutar de las vistas.</p>
                     </div>
 
-                    <div className="btn_card_vehicles">
-                        <p>Ver catalogo</p>
-                    </div>
+                    <NavLink className="btn_card_vehicles" to="/barcos">
+                        <div>
+                            <p>Ver catalogo</p>
+                        </div>
+                    </NavLink>
                 </div>
 
 

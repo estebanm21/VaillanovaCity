@@ -3,39 +3,24 @@ import "./map.css";
 import MapaLocales from "../../assets/mapa_principal.png";
 import pin from "../../assets/pin_mapa.png";
 import Aos from "aos";
-import locaExample from "../../assets/local_example.png";
+
 import imgWomanModal from "../../assets/woman_modal.png"
 import manMapa from "../../assets/man_mapa.png"
 import Footer from "../../components/footer/Footer"
 import SocialMedia from "../../components/socialMedia/SocialMedia"
+import { getLocales } from "../../helpers/getLocales";
+
 
 export default function Map() {
     // Información de los locales con coordenadas de los pines
-    const locales = [
-        {
-            id: 1,
-            nombre: "24/7 Supermarket",
-            imagen: locaExample, // Sustituye con la URL real de la imagen
-            descripcion: "Los locales 24/7 son tiendas de conveniencia que se encuentran en varias ubicaciones del mapa de GTA V. Están abiertos las 24 horas del día, los 7 días de la semana, y ofrecen una variedad de productos que puedes comprar, como comida, bebidas, cigarrillos, alcohol y otros artículos diversos.",
-            precio: 395,
-            coordenadas: { top: "30%", left: "40%" }, // Ajusta estas coordenadas según el mapa
-        },
-        {
-            id: 2,
-            nombre: "Tienda 2",
-            imagen: locaExample,
-            descripcion: "Los locales 24/7 son tiendas de conveniencia que se encuentran en varias ubicaciones del mapa de GTA V. Están abiertos las 24 horas del día, los 7 días de la semana, y ofrecen una variedad de productos que puedes comprar, como comida, bebidas, cigarrillos, alcohol y otros artículos diversos.",
-            precio: 385,
-            coordenadas: { top: "60%", left: "70%" }, // Ajusta estas coordenadas según el mapa
-        },
-        // Agrega más locales según sea necesario
-    ];
+
 
     // Estado para manejar qué local se muestra al pasar el mouse
     const [localSeleccionado, setLocalSeleccionado] = useState(null);
     const [modalAbierto, setModalAbierto] = useState(false);
     const [modalGrandeAbierto, setModalGrandeAbierto] = useState(false);
     const modalRef = useRef(null);
+    const [locales, setLocales] = useState([])
 
     // Función para abrir el modal cuando se hace clic en un pin
     const handlePinClick = (local) => {
@@ -60,6 +45,11 @@ export default function Map() {
     useEffect(() => {
         Aos.init();
     }, []);
+
+
+    useEffect(() => {
+        setLocales(getLocales())
+    }, [])
 
     // Función para abrir el modal grande
     const handleVerMasClick = () => {
@@ -123,6 +113,8 @@ export default function Map() {
                             top: local.coordenadas.top,
                             left: local.coordenadas.left,
                             cursor: "pointer",
+
+                            width: "22px"
                         }}
                         onClick={() => handlePinClick(local)} // Abre o cierra el modal al hacer clic
                     >
@@ -130,8 +122,11 @@ export default function Map() {
                             src={pin} // Imagen del pin
                             alt={`Pin ${local.nombre}`}
                             style={{
-                                width: "70px",
-                                height: "70px",
+                                width: "100%",
+
+
+
+
                             }}
                         />
                     </div>
@@ -202,9 +197,10 @@ export default function Map() {
                     </div>
                 )}
             </div>
-        </div>
 
-            <SocialMedia />
+        </div>
+            {/* <SocialMedia /> */}
+
             <Footer />
 
         </>

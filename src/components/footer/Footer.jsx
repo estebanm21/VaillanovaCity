@@ -43,7 +43,7 @@ const Footer = () => {
 
                     {/* Apartado Normativa */}
                     <div className="col-6 col-sm-3">
-                        <div className="dropdown">
+                        <div>
                             <button
                                 className="btn text-white dropdown-toggle"
                                 type="button"
@@ -81,7 +81,7 @@ const Footer = () => {
 
                     {/* Apartado Donaciones */}
                     <div className="col-6 col-sm-3">
-                        <div className="dropdown">
+                        <div>
                             <button
                                 className="btn text-white dropdown-toggle"
                                 type="button"
