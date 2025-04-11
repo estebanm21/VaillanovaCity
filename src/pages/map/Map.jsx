@@ -189,7 +189,7 @@ export default function Map() {
                                 </div>
                                 <div className="modal-info">
                                     <p>{localSeleccionado.descripcion}</p>
-                                    <p>Precio: ${localSeleccionado.precio}</p>
+                                    <p style={{ fontSize: "25px", fontWeight: "500" }}>Precio: {localSeleccionado.precio}</p>
                                     <button className="btn-obtener-local">Obtener local</button>
                                 </div>
                             </div>
