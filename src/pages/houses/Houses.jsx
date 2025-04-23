@@ -26,7 +26,7 @@ function Houses() {
     }, [])
     return (
         <>
-            <div data-aos="fade-right" className="container_principal_houses">
+            {/* <div data-aos="fade-right" className="container_principal_houses">
 
 
                 <div className="container_title_houses_principal">
@@ -43,11 +43,11 @@ function Houses() {
                 </div>
 
 
-                <div className="container_card_cars">
+                <div className="container_card_cars"> */}
 
-                    {/* card  */}
+            {/* card  */}
 
-                    {
+            {/* {
                         houses.map((house) => (
 
                             <div key={house.id} className="card_car">
@@ -76,17 +76,20 @@ function Houses() {
                                 </NavLink>
                             </div>
                         ))
-                    }
+                    } */}
 
-                </div>
-
-
+            {/* </div>
 
 
 
 
+
+
+            </div> */}
+
+            <div className="container text-center mt-5">
+                <h1>Disponible muy pronto...</h1>
             </div>
-
 
 
             <SocialMedia />

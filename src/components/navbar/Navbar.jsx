@@ -92,7 +92,7 @@ export default function Navbar() {
                 </div>
 
               </div>
-              <a className="nav-link" href="#">
+              <a className="nav-link" target="_blank" href=" https://whitlistvilanovacity.netlify.app/">
                 <div className="container_text_nav">
                   <div >
                     <img src={PostulacionIcon} alt="" />

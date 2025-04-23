@@ -18,21 +18,31 @@ export default function SocialMedial() {
 
 
 
-                <div className="card_discord">
+                <a href="https://discord.gg/a25RMzsNvz" target="_blank">
+                    <div className="card_discord">
 
-                </div>
+                    </div>
+                </a>
 
-                <div className="card_instagam">
+                <a href="https://www.instagram.com/vilanovacityrp/" target="_blank">
+                    <div className="card_instagam">
 
-                </div>
+                    </div>
+                </a>
 
-                <div className="card_youtube">
+                <a href="https://www.youtube.com/channel/UCD2bEZM0Z4HmKpBwPh_lyWg" target="_blank">
 
-                </div>
+                    <div className="card_youtube">
 
-                <div className="card_tiktok">
+                    </div>
 
-                </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@vilanovacity.roleplay" target="_blank">
+                    <div className="card_tiktok">
+
+                    </div>
+                </a>
 
             </div>
 
