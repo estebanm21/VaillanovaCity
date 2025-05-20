@@ -15,15 +15,15 @@ import Footer from "../../components/footer/Footer"
 
 function Houses() {
 
-    const [houses, setHouses] = useState([])
+    // const [houses, setHouses] = useState([])
 
-    useEffect(() => {
-        setHouses(getHouses())
-    }, [])
+    // useEffect(() => {
+    //     setHouses(getHouses())
+    // }, [])
 
-    useEffect(() => {
-        AOS.init()
-    }, [])
+    // useEffect(() => {
+    //     AOS.init()
+    // }, [])
     return (
         <>
             {/* <div data-aos="fade-right" className="container_principal_houses">
